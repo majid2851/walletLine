@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/main_gradient"
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:gravity="center">
+            <EditText
+                android:id="@+id/et_fullNameSU"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/outline_rounded"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:hint="Full Name"
+                android:textColor="@color/white"
+                android:textColorHint="#90ffffff"/>
+            <EditText
+                android:id="@+id/et_emailSU"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/outline_rounded"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="#90ffffff"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/et_passwordSU"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/outline_rounded"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:hint="Password"
+                android:textColor="@color/white"
+                android:textColorHint="#90ffffff"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/et_cpasswordSU"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/outline_rounded"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:hint="Confirm Password"
+                android:textColor="@color/white"
+                android:textColorHint="#90ffffff"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/btn_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sign Up"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@null"
+                android:background="@drawable/outline_rounded"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textColor="#90ffffff"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/tv_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
