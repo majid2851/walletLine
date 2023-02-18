@@ -1,4 +1,4 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet
+package com.walletline.android.android.presentation.wallet
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString

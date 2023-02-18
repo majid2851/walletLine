@@ -1,6 +1,6 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.verify_number.component
+package com.walletline.android.android.presentation.wallet.verify_number.component
 
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -11,9 +11,9 @@ import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.BLUE2
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black_1C
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green2
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green4
-import com.codingwithmitch.kmm_wms.android.R
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.mn_font_mobileNumber
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.multiStyleText
+import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_mobileNumber
+import com.walletline.android.android.presentation.wallet.multiStyleText
 
 @Preview
 @Composable

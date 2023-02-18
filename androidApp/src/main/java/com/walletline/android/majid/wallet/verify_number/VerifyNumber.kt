@@ -1,4 +1,4 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.verify_number
+package com.walletline.android.android.presentation.wallet.verify_number
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -10,13 +10,13 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.*
-import com.codingwithmitch.kmm_wms.android.R
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.ButtonSubmit
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.verify_number.component.*
+import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.mobile_number.component.ButtonSubmit
+import com.walletline.android.android.presentation.wallet.verify_number.component.*
 
 @Preview
 @Composable
-fun VerifyNumber()
+fun VerifyNumber(onProceedClick:()->Unit)
 {
     Column(modifier= Modifier
         .fillMaxWidth()
@@ -48,7 +48,9 @@ fun VerifyNumber()
         Spacer(modifier = Modifier.
             height(dimensionResource(id = R.dimen.paddingLayouts30)))
 
-        ButtonSubmit(title = stringResource(id = R.string.proceed))
+        ButtonSubmit(
+            onClick = {onProceedClick()}, title =
+            stringResource(id = R.string.proceed))
 
 
         TermsAndConditions()

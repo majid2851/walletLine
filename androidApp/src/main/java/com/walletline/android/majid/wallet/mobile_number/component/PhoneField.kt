@@ -1,14 +1,24 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component
+package com.walletline.android.android.presentation.wallet.mobile_number.component
 
+import androidx.compose.compiler.plugins.kotlin.ComposeCallableIds.remember
+import androidx.compose.compiler.plugins.kotlin.ComposeFqNames.remember
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Text
-import androidx.compose.material.TextField
-import androidx.compose.material.TextFieldDefaults
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
+import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -16,18 +26,26 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Gray_B0
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green2
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.White_Pale
-import com.codingwithmitch.kmm_wms.android.R
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.mn_font_country_code
+import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_country_code
+import com.walletline.android.majid.wallet.constants.Utils
+import com.walletline.android.majid.wallet.mobile_number.component.MyData
+import com.walletline.android.majid.wallet.mobile_number.component.SpinnerSample
 
 @Preview
 @Composable
 fun PhoneField()
 {
+    var phoneNumber by remember {
+        mutableStateOf("")
+    }
     Row(modifier= Modifier
         .fillMaxWidth()
         .padding(
@@ -52,20 +70,17 @@ fun PhoneField()
 
     )
     {
+        val list=ArrayList<MyData>()
+        list.add(MyData(1,"NL +31"))
+        list.add(MyData(1,"IR +98"))
+        list.add(MyData(1,"USA +001"))
 
-        Spacer(modifier=Modifier.width(dimensionResource(id = R.dimen.paddingLayouts10)))
-
-        Text(text = stringResource(R.string.countryCode),
-            color = Black,
-            fontSize = mn_font_country_code,
-            fontWeight = FontWeight(500),
-            modifier=Modifier.align(Alignment.CenterVertically)
+        SpinnerSample(list = list
+            , preselected =list.get(0)
+            , onSelectionChanged ={}
         )
-        Spacer(modifier=Modifier.width(dimensionResource(id = R.dimen.paddingLayouts4)))
 
-        Image(painter = painterResource(id = R.drawable.ic_below_errow)
-            , contentDescription = "",
-            modifier=Modifier.align(Alignment.CenterVertically))
+
 
         Spacer(modifier=Modifier.width(dimensionResource(id = R.dimen.paddingLayouts4)))
 
@@ -83,25 +98,42 @@ fun PhoneField()
         }
 
         Box(
-            modifier=Modifier.align(Alignment.CenterVertically)
+            modifier= Modifier
+                .align(Alignment.CenterVertically)
                 .fillMaxHeight()
         )
         {
-            TextField(value = "",
-                onValueChange = {},modifier= Modifier
-                    .fillMaxWidth()
-                    .fillMaxHeight().align(Alignment.Center),
-                placeholder = { Text(
-                    text=stringResource(R.string.phoneNumberHint),
+            TextField(
+                value = phoneNumber,
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(
+                    keyboardType = KeyboardType.Number,
+                    imeAction = ImeAction.Done,
+
+                ),
+                label ={ Text(
+                    text=stringResource(R.string.phoneNumberHint)
                 )},
+                onValueChange = {
+                    if(it.length<= Utils.PHONE_LENGTH)
+                        phoneNumber=it }
+                ,modifier= Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight()
+                    .align(Alignment.Center),
+//                placeholder = { Text(
+//                    text=stringResource(R.string.phoneNumberHint)
+//                )
+//                },
 
                 colors = TextFieldDefaults.textFieldColors(
-                    textColor = Gray_B0,
+                    textColor = Black,
                     disabledTextColor = Color.Transparent,
-                    backgroundColor = Color.Transparent,
+//                    backgroundColor = Color.Transparent,
                     focusedIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
                     disabledIndicatorColor = Color.Transparent,
+                    containerColor=White_Pale
                 ),
             )
         }

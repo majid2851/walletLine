@@ -1,4 +1,4 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number
+package com.walletline.android.android.presentation.wallet.mobile_number
 
 import androidx.compose.ui.unit.sp
 

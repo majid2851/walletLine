@@ -106,6 +106,10 @@ dependencies {
     implementation(Accpmpanist.permission)
 
     implementation(Kermit.kermitLogger)
+
+
+    implementation(RESPONSIVE.SSP)
+    implementation(RESPONSIVE.SDP)
 }
 
 tasks.named<com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask>("dependencyUpdates")

@@ -1,8 +1,7 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number
+package com.walletline.android.android.presentation.wallet.mobile_number
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
@@ -11,13 +10,11 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Background
-import com.codingwithmitch.kmm_wms.android.R
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.*
+import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.mobile_number.component.*
 
-@OptIn(ExperimentalComposeUiApi::class, ExperimentalMaterialApi::class)
-@Preview
 @Composable
-fun MobileNumber()
+fun MobileNumber(onSendCodeClick:()->Unit)
 {
     Column(modifier= Modifier
         .fillMaxWidth()
@@ -36,7 +33,10 @@ fun MobileNumber()
 
         PhoneField()
 
-        ButtonSubmit(title = stringResource(id = R.string.sendCode))
+        ButtonSubmit(
+            onClick=onSendCodeClick,
+            title = stringResource(id = R.string.sendCode)
+        )
 
         Spacer(
             modifier = Modifier.height(

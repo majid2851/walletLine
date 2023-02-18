@@ -1,8 +1,8 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.social_register
+package com.walletline.android.android.presentation.wallet.social_register
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -10,18 +10,17 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.navigation.Screen
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.*
-import com.codingwithmitch.kmm_wms.android.R
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.DescriptionTv
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.Or
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.PhoneField
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.mn_font_enterYour
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.mn_font_mobileNumber
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.multiStyleText
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.social_register.component.HeaderSocialRegister
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.social_register.component.SignField
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.social_register.component.SubmitPhoneNumber
+import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.mobile_number.component.DescriptionTv
+import com.walletline.android.android.presentation.wallet.mobile_number.component.Or
+import com.walletline.android.android.presentation.wallet.mobile_number.component.PhoneField
+import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_enterYour
+import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_mobileNumber
+import com.walletline.android.android.presentation.wallet.multiStyleText
+import com.walletline.android.android.presentation.wallet.social_register.component.HeaderSocialRegister
+import com.walletline.android.android.presentation.wallet.social_register.component.SignField
+import com.walletline.android.android.presentation.wallet.social_register.component.SubmitPhoneNumber
 
 @Preview
 @Composable

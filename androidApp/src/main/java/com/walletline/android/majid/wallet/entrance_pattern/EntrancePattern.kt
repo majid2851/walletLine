@@ -1,33 +1,31 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.entrance_pattern
+package com.walletline.android.android.presentation.wallet.entrance_pattern
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.Text
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.navigation.Screen
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.*
-import com.codingwithmitch.kmm_wms.android.R
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.entrance_pattern.component.EntrancePatternHeader
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.entrance_pattern.component.FingerRecognition
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.entrance_pattern.component.IgnoreSettingPattern_Tv
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.ButtonSubmit
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.component.Or
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.mn_font_enterYour
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.mobile_number.mn_font_mobileNumber
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.multiStyleText
-import com.codingwithmitch.kmm_wms.android.presentation.wallet.twoStyleText
+import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Background
+import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.entrance_pattern.component.EntrancePatternHeader
+import com.walletline.android.android.presentation.wallet.entrance_pattern.component.FingerRecognition
+import com.walletline.android.android.presentation.wallet.entrance_pattern.component.IgnoreSettingPattern_Tv
+import com.walletline.android.android.presentation.wallet.mobile_number.component.ButtonSubmit
+import com.walletline.android.android.presentation.wallet.mobile_number.component.Or
+import com.walletline.android.majid.wallet.entrance_pattern.component.PasswordPattern
 
-@Preview
+
 @Composable
-fun EntrancePattern()
+fun EntrancePattern(onSubmitPatternClick:()->Unit)
 {
     Column(modifier= Modifier
         .fillMaxWidth()
@@ -43,11 +41,10 @@ fun EntrancePattern()
         
         EntrancePatternHeader()
 
-        Spacer(modifier = Modifier
-            .fillMaxWidth()
-            .height(350.dp))
+        PasswordPattern()
 
-        ButtonSubmit(title = stringResource(id = R.string.submitPattern))
+        ButtonSubmit(onClick = {onSubmitPatternClick()}
+            , title = stringResource(id = R.string.submitPattern))
         
         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingLayouts10)))
         

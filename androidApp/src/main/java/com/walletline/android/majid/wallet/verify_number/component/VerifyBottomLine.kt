@@ -1,4 +1,4 @@
-package com.codingwithmitch.kmm_wms.android.presentation.wallet.verify_number.component
+package com.walletline.android.android.presentation.wallet.verify_number.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green5
-import com.codingwithmitch.kmm_wms.android.R
+import com.walletline.android.R
 
 @Composable
 fun VerifyBottomLine()

@@ -4,10 +4,9 @@
     <application
         android:allowBackup="false"
         android:supportsRtl="true"
-        android:name="com.codingwithmitch.kmm_learning_mitch.android.BaseApplication"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".majid.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
