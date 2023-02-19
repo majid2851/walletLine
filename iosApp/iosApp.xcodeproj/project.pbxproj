@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		4C98AD7129A1595800B6D814 /* TextStylesGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98AD7029A1595800B6D814 /* TextStylesGuide.swift */; };
+		4C98AD7529A1606900B6D814 /* dm_sans_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C98AD7429A1606900B6D814 /* dm_sans_regular.ttf */; };
+		4C98AD7729A1607B00B6D814 /* dm_sans_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C98AD7629A1607B00B6D814 /* dm_sans_bold.ttf */; };
+		4CEAECB329A236A500449F92 /* ColorGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEAECB229A236A500449F92 /* ColorGuide.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		C32C6BFBBD75ECE66905647D /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221791591AF4D75EC77E772F /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
@@ -19,6 +23,10 @@
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		221791591AF4D75EC77E772F /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C98AD7029A1595800B6D814 /* TextStylesGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStylesGuide.swift; sourceTree = "<group>"; };
+		4C98AD7429A1606900B6D814 /* dm_sans_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dm_sans_regular.ttf; sourceTree = "<group>"; };
+		4C98AD7629A1607B00B6D814 /* dm_sans_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dm_sans_bold.ttf; sourceTree = "<group>"; };
+		4CEAECB229A236A500449F92 /* ColorGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGuide.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +54,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4C1AA0A9299EC212005B9B09 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4C1AA0AA299EC238005B9B09 /* theme */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		4C1AA0AA299EC238005B9B09 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				4C98AD7029A1595800B6D814 /* TextStylesGuide.swift */,
+				4CEAECB229A236A500449F92 /* ColorGuide.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		4C98AD7329A1601E00B6D814 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4C98AD7629A1607B00B6D814 /* dm_sans_bold.ttf */,
+				4C98AD7429A1606900B6D814 /* dm_sans_regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +101,8 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C98AD7329A1601E00B6D814 /* Font */,
+				4C1AA0A9299EC212005B9B09 /* presentation */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -82,7 +118,6 @@
 				83DC41FC94E165440EF10096 /* Pods-iosApp.debug.xcconfig */,
 				C57E445268DF6E64E1B9E677 /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
+				4C98AD7729A1607B00B6D814 /* dm_sans_bold.ttf in Resources */,
+				4C98AD7529A1606900B6D814 /* dm_sans_regular.ttf in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CEAECB329A236A500449F92 /* ColorGuide.swift in Sources */,
+				4C98AD7129A1595800B6D814 /* TextStylesGuide.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 			);
