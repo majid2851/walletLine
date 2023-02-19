@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mobiSystemPadding">@dimen/_3sdp</dimen>
+    <dimen name="marginLoginTopTitle">@dimen/_25sdp</dimen>
+    <dimen name="mobilSystmeFontSize">10.sp</dimen>
+    <dimen name="loginFontSize">16.sp</dimen>
+    <dimen name="paddingAll">@dimen/_10sdp</dimen>
+    <dimen name="phoneIconBackground">@dimen/_80sdp</dimen>
+    <dimen name="phoneIcon">@dimen/_37sdp</dimen>
+    <dimen name="paddingLayouts10">@dimen/_10sdp</dimen>
+
+
+
+    <dimen name="font_enterYour">11</dimen>
+    <dimen name="paddingDesc">@dimen/_8sdp</dimen>
+    <dimen name="paddingTopDesc">@dimen/_15sdp</dimen>
+    <dimen name="heightPhoneField">@dimen/_41sdp</dimen>
+    <dimen name="phoneFieldCorner">@dimen/_7sdp</dimen>
+    <dimen name="border">@dimen/_1sdp</dimen>
+    <dimen name="buttonSubmitHeight">@dimen/_44sdp</dimen>
+    <dimen name="cornerOfButtonSubmit">@dimen/_6sdp</dimen>
+    <dimen name="or_line_width">@dimen/_120sdp</dimen>
+    <dimen name="orBoxCorner">@dimen/_10sdp</dimen>
+    <dimen name="or_line_height">@dimen/_5sdp</dimen>
+    <dimen name="orWidth">@dimen/_43sdp</dimen>
+    <dimen name="orHeight">@dimen/_30sdp</dimen>
+    <dimen name="quickConnectWidth">@dimen/_180sdp</dimen>
+    <dimen name="brandIconPadding">@dimen/_10sdp</dimen>
+    <dimen name="paddingOrTopBottom">@dimen/_25sdp</dimen>
+    <dimen name="brandsTopPadding">@dimen/_10sdp</dimen>
+    <dimen name="paddingLayouts4">@dimen/_4sdp</dimen>
+    <dimen name="line_width_1">@dimen/_1sdp</dimen>
+    <dimen name="line_PhoneField_height">@dimen/_15sdp</dimen>
+    <dimen name="line_PhoneField_Corner">@dimen/_3sdp</dimen>
+    <dimen name="paddingLayouts7">@dimen/_7sdp</dimen>
+    <dimen name="margintTopVerifyPhone">@dimen/_50sdp</dimen>
+    <dimen name="paddingLayouts20">@dimen/_20sdp</dimen>
+    <dimen name="digit_below_line">@dimen/_40sdp</dimen>
+    <dimen name="digit_below_line_height">@dimen/_2sdp</dimen>
+    <dimen name="digit_below_line1">@dimen/_1sdp</dimen>
+    <dimen name="paddingLayouts30">@dimen/_30sdp</dimen>
+    <dimen name="digit_below_width">@dimen/_60sdp</dimen>
+    <dimen name="resendCodeLine">@dimen/_80sdp</dimen>
+    <dimen name="termsAndConditionsLine">@dimen/_55sdp</dimen>
+    <dimen name="verifyBottomLineWidth">@dimen/_100sdp</dimen>
+    <dimen name="verifyBottomLineHeigth">@dimen/_3sdp</dimen>
+    <dimen name="verifyBottomLineCorner">@dimen/_3sdp</dimen>
+    <dimen name="paddingLayouts150">@dimen/_150sdp</dimen>
+    <dimen name="marginTopEntrancePattern">@dimen/_37sdp</dimen>
+    <dimen name="fingerRecognitionRowWidth">@dimen/_220sdp</dimen>
+    <dimen name="fingerRecognitionRowHeight">@dimen/_36sdp</dimen>
+
+    <dimen name="socialRegisterSignHeight">@dimen/_38sdp</dimen>
+    <dimen name="signFieldBorder">@dimen/_50sdp</dimen>
+    <dimen name="signFieldIconWidth">@dimen/_50sdp</dimen>
+    <dimen name="circle_big_pattern">@dimen/_40sdp</dimen>
+    <dimen name="circle_small_pattern">@dimen/_24sdp</dimen>
+    <dimen name="pass_pattern_width">@dimen/_90sdp</dimen>
+    <dimen name="circle_big_pattern_padding">@dimen/_30sdp</dimen>
+    <dimen name="spinnerWidth">@dimen/_80sdp</dimen>
+    <dimen name="brandWidth">@dimen/_30sdp</dimen>
+</resources>

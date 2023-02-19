@@ -39,6 +39,7 @@ fun SignField(icon:Int=0,title:String="")
                 RoundedCornerShape(dimensionResource(id = R.dimen.signFieldBorder))
             )
             .height(dimensionResource(id = R.dimen.socialRegisterSignHeight))
+            .width(dimensionResource(id = R.dimen.socialRegisterSignHeight))
             .border(
                 width = dimensionResource(id = R.dimen.border),
                 color = Black,

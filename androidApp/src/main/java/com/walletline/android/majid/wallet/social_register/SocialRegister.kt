@@ -48,17 +48,17 @@ fun SocialRegister()
 
         SignField(
             icon = R.drawable.ic_flat_color_icons_google,
-            title = stringResource(R.string.signWIthGoogle)
+            title = stringResource(R.string.signWithGoogle)
         )
 
         SignField(
-            icon = R.drawable.ic_flat_color_icons_google,
-            title = stringResource(R.string.signWIthGoogle)
+            icon = R.drawable.facebook,
+            title = stringResource(R.string.signWithFacebook)
         )
 
         SignField(
-            icon = R.drawable.ic_flat_color_icons_google,
-            title = stringResource(R.string.signWIthGoogle)
+            icon = R.drawable.apple,
+            title = stringResource(R.string.signWithApple)
         )
 
         Spacer(modifier = Modifier
