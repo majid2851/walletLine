@@ -12,8 +12,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Background
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.EntrancePatternHeader
@@ -21,7 +19,7 @@ import com.walletline.android.android.presentation.wallet.entrance_pattern.compo
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.IgnoreSettingPattern_Tv
 import com.walletline.android.android.presentation.wallet.mobile_number.component.ButtonSubmit
 import com.walletline.android.android.presentation.wallet.mobile_number.component.Or
-import com.walletline.android.majid.wallet.entrance_pattern.component.PasswordPattern
+import com.walletline.android.majid.ui.entrance_pattern.component.PasswordPattern
 
 
 @Composable

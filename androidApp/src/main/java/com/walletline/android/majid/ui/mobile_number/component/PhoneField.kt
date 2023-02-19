@@ -1,16 +1,10 @@
 package com.walletline.android.android.presentation.wallet.mobile_number.component
 
-import androidx.compose.compiler.plugins.kotlin.ComposeCallableIds.remember
-import androidx.compose.compiler.plugins.kotlin.ComposeFqNames.remember
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
@@ -23,9 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -34,10 +26,9 @@ import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Gray_B0
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green2
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.White_Pale
 import com.walletline.android.R
-import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_country_code
-import com.walletline.android.majid.wallet.constants.Utils
-import com.walletline.android.majid.wallet.mobile_number.component.MyData
-import com.walletline.android.majid.wallet.mobile_number.component.SpinnerSample
+import com.walletline.android.majid.constants.Utils
+import com.walletline.android.majid.ui.mobile_number.component.MyData
+import com.walletline.android.majid.ui.mobile_number.component.SpinnerSample
 
 @Preview
 @Composable
