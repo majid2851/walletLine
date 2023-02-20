@@ -51,7 +51,7 @@ fun EntrancePattern(onSubmitPatternClick:()->Unit)
         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingLayouts10)))
 
         FingerRecognition()
-//
+
         Spacer(modifier = Modifier
             .fillMaxHeight()
             .weight(1.0f))
