@@ -59,4 +59,5 @@
     <dimen name="circle_big_pattern_padding">@dimen/_30sdp</dimen>
     <dimen name="spinnerWidth">@dimen/_80sdp</dimen>
     <dimen name="brandWidth">@dimen/_30sdp</dimen>
+    <dimen name="dot_view_size">@dimen/_10sdp</dimen>
 </resources>
