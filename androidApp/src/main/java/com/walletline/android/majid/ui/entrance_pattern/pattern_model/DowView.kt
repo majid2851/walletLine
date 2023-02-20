@@ -54,12 +54,12 @@ class DowView @JvmOverloads constructor(
     {
         this.key=key
     }
-    fun setDotViewColor(
-        @ColorInt color:Color
-    )
-    {
-        (drawable as GradientDrawable).setColor(color)
-    }
+//    fun setDotViewColor(
+//        @ColorInt color:Color
+//    )
+//    {
+//        (drawable as GradientDrawable).setColor(color)
+//    }
 
     fun animateDotView()
     {

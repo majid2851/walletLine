@@ -101,15 +101,15 @@ class PatternLockView @JvmOverloads constructor(context: Context,
         addInitialDraw(canvas)
         if(state is PatternViewState.Error)
         {
-            updateViewState(state)
+//            updateViewState(state)
         }
         drawLine(canvas)
         if(state is PatternViewState.Error)
         {
-            countDownTimer=object :CountDownTimer(1000,1000)
-            {
-
-            }
+//            countDownTimer=object :CountDownTimer(1000,1000)
+//            {
+//
+//            }
         }
 
     }
