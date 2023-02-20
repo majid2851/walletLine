@@ -3,4 +3,5 @@ object KotlinPlugins {
     const val Multiplatform = "multiplatform"
     const val Cocoapods = "native.cocoapods"
     const val Serialization = "plugin.serialization"
+    const val kapt = "kapt"
 }

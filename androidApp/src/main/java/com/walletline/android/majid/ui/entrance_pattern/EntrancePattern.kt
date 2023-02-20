@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Background
@@ -23,7 +24,8 @@ import com.walletline.android.majid.ui.entrance_pattern.component.PasswordPatter
 
 
 @Composable
-fun EntrancePattern(onSubmitPatternClick:()->Unit)
+fun EntrancePattern(
+    onSubmitPatternClick: () -> Unit)
 {
     Column(modifier= Modifier
         .fillMaxWidth()
@@ -39,7 +41,7 @@ fun EntrancePattern(onSubmitPatternClick:()->Unit)
         
         EntrancePatternHeader()
 
-        PasswordPattern()
+        PasswordPattern(LocalContext.current)
 
         ButtonSubmit(onClick = {onSubmitPatternClick()}
             , title = stringResource(id = R.string.submitPattern))

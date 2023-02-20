@@ -45,4 +45,6 @@
     <string name="signWithFacebook">Sign in with Facebook</string>
     <string name="usePhoneToLogin">Use your phone number to register or login</string>
     <string name="submitPhoneNumber">Submit phone number</string>
+    <string name="stage_button_confirm">Confirm</string>
+    <string name="alert_dialog_confirm_message">Successfully Granted.</string>
 </resources>
