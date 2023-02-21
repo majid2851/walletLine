@@ -9,6 +9,7 @@ import com.walletline.android.android.presentation.wallet.mobile_number.MobileNu
 import com.walletline.android.android.presentation.wallet.entrance_pattern.EntrancePattern
 import com.walletline.android.android.presentation.wallet.social_register.SocialRegister
 import com.walletline.android.android.presentation.wallet.verify_number.VerifyNumber
+import com.walletline.android.majid.ui.social_register.RegistrationFinished
 
 @Preview
 @Composable
@@ -39,7 +40,10 @@ fun Navigation()
             SocialRegister()
         }
 
-
+        composable(route = Screen.RegistrationFinished.route)
+        {
+            RegistrationFinished()
+        }
 
     }
 

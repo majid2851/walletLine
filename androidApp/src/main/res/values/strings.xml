@@ -45,4 +45,13 @@
     <string name="signWithFacebook">Sign in with Facebook</string>
     <string name="usePhoneToLogin">Use your phone number to register or login</string>
     <string name="submitPhoneNumber">Submit phone number</string>
+
+    <string name="account_recovery">Do you want to improve account recovery?</string>
+    <string name="link_profile"><u>Link your profile to your socials</u></string>
+    <string name="account_created_message">Dear user your account has been created successfully. Enjoy using app</string>
+    <string name="manage_wallet">manage your wallet easily!</string>
+    <string name="created_by">created by </string>
+    <string name="account">Account </string>
+    <string name="created">Created! </string>
+    <string name="start_fun">start fun! </string>
 </resources>
