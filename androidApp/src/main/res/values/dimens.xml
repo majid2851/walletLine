@@ -61,7 +61,7 @@
     <dimen name="brandWidth">@dimen/_30sdp</dimen>
 
     <dimen name="registrationBgImageWidth">@dimen/_223sdp</dimen>
-    <dimen name="registrationBgImageHeight">@dimen/_91sdp</dimen>
+    <dimen name="registrationBgImageHeight">@dimen/_87sdp</dimen>
     <dimen name="spacerHeight22">@dimen/_22sdp</dimen>
     <dimen name="registrationDolphinImageWidth">@dimen/_148sdp</dimen>
     <dimen name="registrationDolphinImageHeight">@dimen/_105sdp</dimen>
@@ -69,7 +69,7 @@
     <dimen name="spacerHeight42">@dimen/_42sdp</dimen>
     <dimen name="textPadding30">@dimen/_30sdp</dimen>
     <dimen name="spacerHeight19">@dimen/_19sdp</dimen>
-    <dimen name="spacerHeight93">@dimen/_93sdp</dimen>
+    <dimen name="spacerHeight93">@dimen/_53sdp</dimen>
     <dimen name="buttonCornerRadius10">@dimen/_10sdp</dimen>
     <dimen name="buttonPadding27">@dimen/_27sdp</dimen>
     <dimen name="buttonHeight55">@dimen/_55sdp</dimen>
