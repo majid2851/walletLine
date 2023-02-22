@@ -37,7 +37,7 @@ fun RegistrationFinished() {
                     width = dimensionResource(id = R.dimen.registrationBgImageWidth),
                     height = dimensionResource(id = R.dimen.registrationBgImageHeight)
                 ),
-            painter = painterResource(id = R.drawable.registration_bg_1),
+            painter = painterResource(id = R.drawable.registration_bg),
             contentDescription = null
         )
         Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.spacerHeight22)))
