@@ -17,7 +17,7 @@ fun Navigation()
 {
     val navController= rememberNavController()
     NavHost(navController = navController,
-        startDestination = Screen.MobileNumber.route)
+        startDestination = Screen.RegistrationFinished.route)
     {
 
         composable(route = Screen.MobileNumber.route)

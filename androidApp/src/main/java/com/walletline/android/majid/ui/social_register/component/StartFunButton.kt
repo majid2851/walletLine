@@ -26,8 +26,8 @@ fun StartFunButton() {
             .padding(
                 start = dimensionResource(id = R.dimen.buttonPadding27),
                 end = dimensionResource(id = R.dimen.buttonPadding27),
-                top = dimensionResource(id = R.dimen.buttonPadding15),
-                bottom = dimensionResource(id = R.dimen.buttonPadding18)
+              /*  top = dimensionResource(id = R.dimen.buttonPadding15),
+                bottom = dimensionResource(id = R.dimen.buttonPadding18)*/
             )
             .fillMaxWidth()
             .height(dimensionResource(id = R.dimen.buttonHeight55)),

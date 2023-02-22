@@ -72,8 +72,6 @@
     <dimen name="spacerHeight93">@dimen/_93sdp</dimen>
     <dimen name="buttonCornerRadius10">@dimen/_10sdp</dimen>
     <dimen name="buttonPadding27">@dimen/_27sdp</dimen>
-    <dimen name="buttonPadding15">@dimen/_15sdp</dimen>
-    <dimen name="buttonPadding18">@dimen/_18sdp</dimen>
     <dimen name="buttonHeight55">@dimen/_55sdp</dimen>
 
 
