@@ -35,7 +35,7 @@ struct TextStylesGuide: View {
     }
 }
 
-struct FontName {
+struct DMSans {
     static let medium = "DMSans-Regular"
     static let bold = "DMSans-Bold"
 }
@@ -45,7 +45,7 @@ struct TitleLargeStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.bold,
+                    DMSans.bold,
                     size: 35,
                     relativeTo: .title
                 )
@@ -58,7 +58,7 @@ struct TitleMediumStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.bold,
+                    DMSans.bold,
                     size: 25,
                     relativeTo: .title2
                 )
@@ -71,7 +71,7 @@ struct TitleSmallStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.medium,
+                    DMSans.medium,
                     size: 24,
                     relativeTo: .title3
                 )
@@ -84,7 +84,7 @@ struct BodyLargeStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.bold,
+                    DMSans.bold,
                     size: 17,
                     relativeTo: .subheadline
                 )
@@ -97,7 +97,20 @@ struct BodyMediumStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.medium,
+                    DMSans.medium,
+                    size: 15,
+                    relativeTo: .body
+                )
+            )
+    }
+}
+
+struct BoldBodyMediumStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(
+                .custom(
+                    DMSans.bold,
                     size: 15,
                     relativeTo: .body
                 )
@@ -110,7 +123,7 @@ struct BodySmallStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.bold,
+                    DMSans.bold,
                     size: 13,
                     relativeTo: .body
                 )
@@ -123,7 +136,7 @@ struct LabelSmallStyle: ViewModifier {
         content
             .font(
                 .custom(
-                    FontName.medium,
+                    DMSans.medium,
                     size: 12,
                     relativeTo: .footnote
                 )
@@ -146,6 +159,9 @@ extension View {
     }
     public func bodyMediumStyle() -> some View {
         modifier(BodyMediumStyle())
+    }
+    public func boldBodyMediumStyle() -> some View {
+        modifier(BoldBodyMediumStyle())
     }
     public func bodySmallStyle() -> some View {
         modifier(BodySmallStyle())
