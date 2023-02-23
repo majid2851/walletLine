@@ -10,9 +10,17 @@ import SwiftUI
 
 struct MobileLoginScreen: View {
     @State var phoneText: String = ""
+    @State private var proceed = false
     var body: some View {
         ScrollView {
             VStack {
+                NavigationLink(
+                    destination: MobileVerifyScreen(),
+                    isActive: $proceed
+                ) {
+                    EmptyView()
+                }
+                .hidden()
                 Image("phone")
                     .resizable()
                     .frame(width: 130, height: 130)
@@ -29,6 +37,7 @@ struct MobileLoginScreen: View {
                     firstCharColor: Color.secondaryColor,
                     secondCharColor: Color.primaryContainerColor
                 )
+                .titleLargeStyle()
                 .padding(.bottom, 20)
                 
                 Text("We will provide you with 4 digit verification code")
@@ -40,9 +49,16 @@ struct MobileLoginScreen: View {
                     .padding(.vertical, 16)
                     .padding(.horizontal, 20)
                 
-                Button("Send Code", action: {})
-                    .buttonStyle(PrimaryButtonStyle())
-                    .padding(.horizontal, 30)
+                Button(
+                    action: {
+                        proceed = true
+                    },
+                    label: {
+                        Text("Send Code")
+                            .primaryButtonStyle()
+                    }
+                )
+                .padding(.horizontal, 30)
                 
                 OrDivider()
                     .padding(.horizontal, 30)
@@ -56,26 +72,15 @@ struct MobileLoginScreen: View {
                 
                 HStack(spacing: 36) {
                     Image("google_icon")
-                        .onTapGesture {
-                            
-                        }
+                        .onTapGesture {}
                     Image("facebook_icon")
-                        .onTapGesture {
-                            
-                        }
+                        .onTapGesture {}
                     Image("apple_icon")
-                        .onTapGesture {
-                            
-                        }
+                        .onTapGesture {}
                 }
                 .padding(.top, 22)
-                
-                Spacer()
-                    
             }
         }
-        
-        
     }
 }
 

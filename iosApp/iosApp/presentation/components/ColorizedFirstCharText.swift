@@ -29,7 +29,6 @@ struct ColorizedFirstCharText: View {
     }
     var body: some View {
         Text(str)
-            .titleLargeStyle()
     }
 }
 
