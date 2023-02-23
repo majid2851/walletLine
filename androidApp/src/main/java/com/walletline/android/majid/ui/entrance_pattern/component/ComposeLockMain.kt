@@ -6,38 +6,28 @@ import android.view.MotionEvent
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
-import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
-import androidx.compose.ui.graphics.drawscope.DrawScope
-import androidx.compose.ui.graphics.drawscope.rotate
-import androidx.compose.ui.graphics.vector.DefaultStrokeLineJoin
 import androidx.compose.ui.input.pointer.pointerInteropFilter
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.core.graphics.rotationMatrix
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Gray_D9
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green
 import com.mrhwsn.composelock.Line
-import com.walletline.android.R
 import com.walletline.android.majid.constants.Utils
 import com.walletline.android.majid.ui.entrance_pattern.pattern_model.ComposeLockCallback
 import com.walletline.android.majid.ui.entrance_pattern.pattern_model.Dot
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlin.math.log
 
 
 @OptIn(ExperimentalComposeUiApi::class)
@@ -73,6 +63,7 @@ fun ComposeLockMain(
     Canvas(
         modifier.pointerInteropFilter {
             when (it.action) {
+
                 MotionEvent.ACTION_DOWN -> {
 
                     refreshThis(connectedLines, connectedDots, dotsList, dotsDefaultColor)
@@ -80,6 +71,7 @@ fun ComposeLockMain(
 
                     for (dots in dotsList)
                     {
+
                         if (
                             it.x in Range(
                                 dots.offset.x - sensitivity,
@@ -87,6 +79,7 @@ fun ComposeLockMain(
                             ) &&
                             it.y in Range(dots.offset.y - sensitivity, dots.offset.y + sensitivity)
                         ) {
+
                             connectedDots.add(dots)
                             callback.onStart(dots)
                             scope.launch {
@@ -100,6 +93,8 @@ fun ComposeLockMain(
                             }
                             previewLine.value =
                                 previewLine.value.copy(start = Offset(dots.offset.x, dots.offset.y))
+
+
                         }
                     }
 
@@ -112,6 +107,7 @@ fun ComposeLockMain(
                         if (!connectedDots.contains(dots)) {
                             if (
                                 it.x in Range(
+
                                     dots.offset.x - sensitivity,
                                     dots.offset.x + sensitivity
                                 ) &&
@@ -120,12 +116,14 @@ fun ComposeLockMain(
                                     dots.offset.y + sensitivity
                                 )
                             ) {
+
                                 connectedLines.add(
                                     Line(
                                         start = previewLine.value.start,
                                         end = dots.offset
                                     )
                                 )
+
                                 connectedDots.add(dots)
                                 callback.onDotConnected(dots)
                                 scope.launch {
@@ -138,6 +136,9 @@ fun ComposeLockMain(
                                     dots.size.animateTo(dotsSize, tween(animationDuration))
                                 }
                                 previewLine.value = previewLine.value.copy(start = dots.offset)
+
+
+
                             }
                         }
                     }
@@ -147,7 +148,6 @@ fun ComposeLockMain(
                         previewLine.value.copy(start = Offset(0f, 0f), end = Offset(0f, 0f))
                     callback.onResult(connectedDots)
 
-//
                 }
             }
             true
@@ -179,7 +179,10 @@ fun ComposeLockMain(
                 }
             }
         }
-        if (previewLine.value.start != Offset(0f, 0f) && previewLine.value.end != Offset(0f, 0f)) {
+        if (previewLine.value.start != Offset(0f, 0f) && previewLine.value.end != Offset(0f, 0f))
+        {
+
+
             drawLine(
                 color = linesColor,
                 start = previewLine.value.start,
@@ -198,146 +201,159 @@ fun ComposeLockMain(
         }
         for (line in connectedLines)
         {
+            Log.i("mag2851",line.start.x.toString()+","
+                    +line.start.y.toString())
+            if (line.start.x!=0f && line.start.y!=0f)
+            {
+                drawLine(
+                    color = linesColor,
+                    start = line.start,
+                    end = line.end,
+                    strokeWidth = linesStroke,
+                    cap = StrokeCap.Round,
 
-            drawLine(
-                color = linesColor,
-                start = line.start,
-                end = line.end,
-                strokeWidth = linesStroke,
-                cap = StrokeCap.Round,
+                    )
+
+
+                //horizontal movement------------------------------------------
+                drawLine(
+                    color= dotsSecondColor//Color.Red
+                    ,start = (line.start+line.end)/2f -
+                            if(line.start.y==line.end.y)
+                            {
+                                if(line.start.x<line.end.x){
+                                    Offset(Utils.ARROW_Size,-Utils.ARROW_Size)
+                                }else Offset(-Utils.ARROW_Size,Utils.ARROW_Size)
+                            }else Offset(0f,0f)
+
+
+                    ,end = (line.start+line.end)/2f
+                    ,strokeWidth = Utils.ARROW_STROKE
 
                 )
-
-
-            //horizontal movement------------------------------------------
-             drawLine(
-                 color= dotsSecondColor//Color.Red
-                 ,start = (line.start+line.end)/2f -
-                         if(line.start.y==line.end.y)
-                         {
-                             if(line.start.x<line.end.x){
-                                 Offset(Utils.ARROW_Size,-Utils.ARROW_Size)
-                             }else Offset(-Utils.ARROW_Size,Utils.ARROW_Size)
-                         }else Offset(0f,0f)
-
-
-                 ,end = (line.start+line.end)/2f
-                 ,strokeWidth = Utils.ARROW_STROKE
-
-                 )
-            drawLine(
-                color= dotsSecondColor//Color.Blue
-                ,start = (line.start+line.end)/2f -
-                        if (line.start.y==line.end.y)
-                        {
-                            if(line.start.x<line.end.x ){
-                                Offset(Utils.ARROW_Size,Utils.ARROW_Size)
-                            }else Offset(-Utils.ARROW_Size,-Utils.ARROW_Size)
-                        }else Offset(0f,0f)
-
-
-                ,end = (line.start+line.end)/2f
-                ,strokeWidth = Utils.ARROW_STROKE
-            )
-            //vertical movement--------------------------------------------------------------------------------------
-            drawLine(
-                color= dotsSecondColor//Color.Red
-                ,start = (line.start+line.end)/2f -
-                        if (line.start.x==line.end.x)
-                        {
-                            if(line.start.y<line.end.y ){
-                                Offset(-Utils.ARROW_Size,Utils.ARROW_Size)
-                            }else Offset(Utils.ARROW_Size,-Utils.ARROW_Size)
-                        }else{
-                            Offset(0f,0f)
-                        }
-
-
-                ,end = (line.start+line.end)/2f
-                ,strokeWidth = Utils.ARROW_STROKE
-
-            )
-            drawLine(
-                color=dotsSecondColor// Color.Blue
-                ,start = (line.start+line.end)/2f -
-                        if( line.start.x==line.end.x)
-                        {
-                            if(line.start.y<line.end.y){
-                                Offset(Utils.ARROW_Size,Utils.ARROW_Size)
-                            }else Offset(-Utils.ARROW_Size,-Utils.ARROW_Size)
-                        }else  Offset(0f,0f)
-
-
-                ,end = (line.start+line.end)/2f
-                ,strokeWidth = Utils.ARROW_STROKE
-            )
-
-
-            //----------------------------------------------------
-            //other movement =>from start to end
-            drawLine(
-                color= dotsSecondColor//Color.Red
-                ,start = (line.start+line.end)/2f -
-                        (
-                            if (line.start.x!=line.end.x && line.start.y!=line.end.y
-                                && line.start.x>line.end.x &&  line.end.y>line.start.y)
+                drawLine(
+                    color= dotsSecondColor//Color.Blue
+                    ,start = (line.start+line.end)/2f -
+                            if (line.start.y==line.end.y)
                             {
-                                Offset(-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
-                            }
-                            else if (line.start.x!=line.end.x && line.start.y!=line.end.y
-                                && line.start.x<line.end.x && line.end.y<line.start.y) {
-                                Offset(Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
-                            }
-                            else if (line.start.x!=line.end.x && line.start.y!=line.end.y )
+                                if(line.start.x<line.end.x ){
+                                    Offset(Utils.ARROW_Size,Utils.ARROW_Size)
+                                }else Offset(-Utils.ARROW_Size,-Utils.ARROW_Size)
+                            }else Offset(0f,0f)
+
+
+                    ,end = (line.start+line.end)/2f
+                    ,strokeWidth = Utils.ARROW_STROKE
+                )
+                //vertical movement--------------------------------------------------------------------------------------
+                drawLine(
+                    color= dotsSecondColor//Color.Red
+                    ,start = (line.start+line.end)/2f -
+                            if (line.start.x==line.end.x)
                             {
                                 if(line.start.y<line.end.y ){
-                                    Offset(Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
-                                }else Offset(-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
+                                    Offset(-Utils.ARROW_Size,Utils.ARROW_Size)
+                                }else Offset(Utils.ARROW_Size,-Utils.ARROW_Size)
                             }else{
                                 Offset(0f,0f)
                             }
 
 
-                        )
+                    ,end = (line.start+line.end)/2f
+                    ,strokeWidth = Utils.ARROW_STROKE
 
-
-                ,end = (line.start+line.end)/2f
-                ,strokeWidth = Utils.ARROW_STROKE
-                ,
-
-            )
-            drawLine(
-                color= dotsSecondColor//Color.Blue
-                ,start = (line.start+line.end)/2f -
-                        (
-                            if (line.start.x!=line.end.x && line.start.y!=line.end.y
-                                && line.start.x>line.end.x &&  line.end.y>line.start.y)
+                )
+                drawLine(
+                    color=dotsSecondColor// Color.Blue
+                    ,start = (line.start+line.end)/2f -
+                            if( line.start.x==line.end.x)
                             {
-                                Offset(0f,Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,)
-                            }
-                            else if (line.start.x!=line.end.x && line.start.y!=line.end.y
-                                && line.start.x<line.end.x && line.end.y<line.start.y) {
-                                Offset(0f,-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,)
-                            }
-                            else if (line.start.x!=line.end.x && line.start.y!=line.end.y)
-                            {
-                                if(line.start.y<line.end.y ){
-                                    Offset(0f,Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER)
-                                }else Offset(0f,-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER)
-                            }else{
-                                Offset(0f,0f)
-                            })
+                                if(line.start.y<line.end.y){
+                                    Offset(Utils.ARROW_Size,Utils.ARROW_Size)
+                                }else Offset(-Utils.ARROW_Size,-Utils.ARROW_Size)
+                            }else  Offset(0f,0f)
 
 
-                ,end = (line.start+line.end)/2f
-                ,strokeWidth = Utils.ARROW_STROKE
-                ,
-
+                    ,end = (line.start+line.end)/2f
+                    ,strokeWidth = Utils.ARROW_STROKE
                 )
 
 
+                //----------------------------------------------------
+                //other movement =>
+                drawLine(
+                    color= dotsSecondColor//Color.Red
+                    ,start = (line.start+line.end)/2f -
+                            (
+                                    if (line.start.x!=line.end.x && line.start.y!=line.end.y
+                                        && line.start.x>line.end.x &&  line.end.y>line.start.y)
+                                    {
+                                        Offset(-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
+                                    }
+                                    else if (line.start.x!=line.end.x && line.start.y!=line.end.y
+                                        && line.start.x<line.end.x && line.end.y<line.start.y) {
+                                        Offset(Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
+                                    }
+                                    else if (line.start.x!=line.end.x && line.start.y!=line.end.y )
+                                    {
+                                        if(line.start.y<line.end.y ){
+                                            Offset(Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
+                                        }else Offset(-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,0f)
+                                    }else{
+                                        Offset(0f,0f)
+                                    }
 
-            //----------------------------------------------------
+
+                                    )
+
+
+                    ,end = (line.start+line.end)/2f
+                    ,strokeWidth = Utils.ARROW_STROKE
+                    ,
+
+                    )
+                drawLine(
+                    color= dotsSecondColor//Color.Blue
+                    ,start = (line.start+line.end)/2f -
+                            (
+                                    if (line.start.x!=line.end.x && line.start.y!=line.end.y
+                                        && line.start.x>line.end.x &&  line.end.y>line.start.y)
+                                    {
+                                        Offset(0f,Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,)
+                                    }
+                                    else if (line.start.x!=line.end.x && line.start.y!=line.end.y
+                                        && line.start.x<line.end.x && line.end.y<line.start.y) {
+                                        Offset(0f,-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER,)
+                                    }
+                                    else if (line.start.x!=line.end.x && line.start.y!=line.end.y)
+                                    {
+                                        if(line.start.y<line.end.y ){
+                                            Offset(0f,Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER)
+                                        }else Offset(0f,-Utils.ARROW_Size*Utils.ARROW_SIZE_BIGER)
+                                    }else{
+                                        Offset(0f,0f)
+                                    })
+
+
+                    ,end = (line.start+line.end)/2f
+                    ,strokeWidth = Utils.ARROW_STROKE
+                    ,
+
+                    )
+
+
+
+                //----------------------------------------------------
+
+
+
+
+
+            }
+
+
+
+
 
 
         }

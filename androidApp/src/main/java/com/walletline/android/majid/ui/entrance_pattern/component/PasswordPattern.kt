@@ -1,7 +1,9 @@
 package com.walletline.android.majid.ui.entrance_pattern.component
 
 import android.content.Context
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
@@ -9,10 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Gray_D9
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green3
 import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.theme.Black
+import com.walletline.android.android.presentation.wallet.theme.Gray_D9
+import com.walletline.android.android.presentation.wallet.theme.Green3
 import com.walletline.android.majid.ui.entrance_pattern.pattern_model.ComposeLockCallback
 import com.walletline.android.majid.ui.entrance_pattern.pattern_model.Dot
 
@@ -20,12 +22,14 @@ import com.walletline.android.majid.ui.entrance_pattern.pattern_model.Dot
 @Composable
 fun PasswordPattern(context: Context= LocalContext.current)
 {
-    Box()
+    Box(modifier=Modifier
+        .height(dimensionResource(id = R.dimen.pass_pattern_height))
+    )
     {
         ComposeLockMain(
             modifier = Modifier
-                .fillMaxWidth()
-                .height(dimensionResource(id = R.dimen.pass_pattern_height)),
+                .fillMaxSize()
+            ,
             dimension = 3,
             sensitivity = 80f,
             dotsDefaultColor = Gray_D9,
@@ -57,8 +61,7 @@ fun PasswordPattern(context: Context= LocalContext.current)
 
         ComposeLockMain(
             modifier = Modifier
-                .fillMaxWidth()
-                .height(dimensionResource(id = R.dimen.pass_pattern_height)),
+                .fillMaxSize(),
             dimension = 3,
             sensitivity = 80f,
             dotsDefaultColor = Gray_D9,

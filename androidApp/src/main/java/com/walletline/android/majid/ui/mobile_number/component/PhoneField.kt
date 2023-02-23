@@ -21,11 +21,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Gray_B0
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green2
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.White_Pale
 import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.theme.Black
+import com.walletline.android.android.presentation.wallet.theme.Gray_B0
+import com.walletline.android.android.presentation.wallet.theme.Green2
+import com.walletline.android.android.presentation.wallet.theme.White_Pale
 import com.walletline.android.majid.constants.Utils
 import com.walletline.android.majid.ui.mobile_number.component.MyData
 import com.walletline.android.majid.ui.mobile_number.component.SpinnerSample

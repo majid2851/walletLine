@@ -5,7 +5,6 @@ plugins {
     id(Plugins.AndroidApplication)
     id(Plugins.Ksp) version Plugins.KspVersion
     id(GradleVersions.Plugin) version GradleVersions.Version
-    id (Plugins.Hilt)
 
     kotlin(KotlinPlugins.Android)
     kotlin(KotlinPlugins.kapt)
@@ -75,9 +74,7 @@ android {
 
 dependencies {
     implementation(project(":shared"))
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
     val composeBOM = platform(Compose.composeBOM)
     implementation(composeBOM)
     androidTestImplementation(composeBOM)
@@ -122,12 +119,8 @@ dependencies {
     implementation(Kermit.kermitLogger)
 
 
-    //Added by Majid
     implementation(RESPONSIVE.SSP)
     implementation(RESPONSIVE.SDP)
-    implementation(Hilt.hiltAndroid)
-    implementation(Hilt.hiltNavigation)
-    kapt(Hilt.hiltCompiler)
 
     //-------------------------------------------
 

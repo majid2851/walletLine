@@ -9,12 +9,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.*
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.mobile_number.component.ButtonSubmit
+import com.walletline.android.android.presentation.wallet.theme.Background
 import com.walletline.android.android.presentation.wallet.verify_number.component.*
-
-@Preview
+ 
 @Composable
 fun VerifyNumber(onProceedClick:()->Unit)
 {

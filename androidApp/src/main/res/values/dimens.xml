@@ -61,4 +61,5 @@
     <dimen name="brandWidth">@dimen/_30sdp</dimen>
     <dimen name="dot_view_size">@dimen/_10sdp</dimen>
     <dimen name="pass_pattern_height">@dimen/_250sdp</dimen>
+    <dimen name="fingerScanImgSize">@dimen/_30sdp</dimen>
 </resources>

@@ -8,11 +8,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.*
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_enterYour
 import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_mobileNumber
 import com.walletline.android.android.presentation.wallet.multiStyleText
+import com.walletline.android.android.presentation.wallet.theme.BLUE2
+import com.walletline.android.android.presentation.wallet.theme.Black_1C
+import com.walletline.android.android.presentation.wallet.theme.Gray_60
+import com.walletline.android.android.presentation.wallet.theme.Green
 
 @Preview
 @Composable
@@ -30,13 +33,11 @@ fun HeaderSocialRegister()
 
         Text(
             text = multiStyleText(
-                stringResource(R.string.s),
+                stringResource(R.string.social),
                 BLUE2,
-                stringResource(R.string.ocial),
                 Black_1C,
-                stringResource(R.string.m),
-                Green
-                , stringResource(R.string.edia),
+                stringResource(R.string.media),
+                Green,
                 Black_1C
             ),
             fontSize = mn_font_mobileNumber,

@@ -1,14 +1,6 @@
-package com.codingwithmitch.food2forkcompose.presentation.theme
+package com.walletline.android.majid.theme
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.ExperimentalComposeUiApi
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.*
+
 
 //private val LightThemeColors = lightColors(
 //  primary = Blue600,
