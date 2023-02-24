@@ -10,10 +10,11 @@ import Combine
 import SwiftUI
 
 struct PhoneTextField: View {
-    @State var text: String
+    @Binding var text: String
     var countries = ["NL +31", "IR +98"]
-    @State private var index = 0
-    @State private var selected = "NL +31"
+    @State var index: Int = 0
+    @Binding var selected: String
+    @FocusState private var isKeyboardShowing: Bool
     var body: some View {
         HStack {
             Menu {
@@ -39,13 +40,14 @@ struct PhoneTextField: View {
                 }
             } label: {
                 Text(countries[index])
-                    .foregroundColor(Color.onBackgroundColor)
                 Image("arrow_down")
             }
+            .foregroundColor(Color.onBackgroundColor)
             .frame(width: 80)
             Divider().padding(.vertical, 8)
             TextField("Phone Number", text: $text)
                 .keyboardType(.numberPad)
+                .focused($isKeyboardShowing)
                 .onReceive(
                     Just(text)
                 ) { newValue in
@@ -63,13 +65,25 @@ struct PhoneTextField: View {
             RoundedRectangle(cornerRadius: 16)
                 .stroke(Color.outlineVariantColor, lineWidth: 2)
         )
+        .onTapGesture {
+            isKeyboardShowing.toggle()
+        }
+        .toolbar {
+            ToolbarItem(placement: .keyboard) {
+                Button("Done") {
+                    isKeyboardShowing.toggle()
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+        }
     }
 }
 
 struct PhoneTextField_Previews: PreviewProvider {
     static var previews: some View {
         PhoneTextField(
-            text: ""
+            text: .constant(""),
+            selected: .constant("NL +31")
         )
     }
 }
