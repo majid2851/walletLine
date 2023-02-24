@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.codingwithmitch.kmm_learning_mitch.android.presentation.navigation.Navigation
 import com.walletline.Greeting
+import com.walletline.android.presentation.theme.WalletLineTheme
 
 class MainActivity : ComponentActivity()
 {
@@ -20,6 +21,7 @@ class MainActivity : ComponentActivity()
         super.onCreate(savedInstanceState)
 
         setContent { Navigation() }
+
     }
 }
 
