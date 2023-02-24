@@ -79,6 +79,19 @@ struct TitleSmallStyle: ViewModifier {
     }
 }
 
+struct BodyLargeStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(
+                .custom(
+                    FontName.bold,
+                    size: 17,
+                    relativeTo: .subheadline
+                )
+            )
+    }
+}
+
 struct BodyMediumStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -127,6 +140,9 @@ extension View {
     }
     public func titleSmallStyle() -> some View {
         modifier(TitleSmallStyle())
+    }
+    public func bodyLargeStyle() -> some View {
+        modifier(BodyLargeStyle())
     }
     public func bodyMediumStyle() -> some View {
         modifier(BodyMediumStyle())
