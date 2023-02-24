@@ -11,6 +11,9 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		4C09932529A5262E004772A3 /* OrDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09932429A5262E004772A3 /* OrDivider.swift */; };
+		4C20103C29A7D1AB007BDF7D /* LoginSubHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20103B29A7D1AB007BDF7D /* LoginSubHeader.swift */; };
+		4C20103F29A7D263007BDF7D /* LoginBodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20103E29A7D263007BDF7D /* LoginBodyText.swift */; };
+		4C56487929A7F979005C0B44 /* SocialMediaLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56487829A7F979005C0B44 /* SocialMediaLoginScreen.swift */; };
 		4C8C53AB29A69D780026F684 /* OtpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C53AA29A69D780026F684 /* OtpTextField.swift */; };
 		4C8C742F29A77C05005F6E2D /* EmbeddedUnderlineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C742E29A77C05005F6E2D /* EmbeddedUnderlineText.swift */; };
 		4C98AD7129A1595800B6D814 /* TextStylesGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98AD7029A1595800B6D814 /* TextStylesGuide.swift */; };
@@ -21,6 +24,7 @@
 		4CC1612C29A5234D00AED7A3 /* ButtonStylesGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1612B29A5234D00AED7A3 /* ButtonStylesGuide.swift */; };
 		4CD874EE29A2A4A2004D9B6A /* MobileLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD874ED29A2A4A2004D9B6A /* MobileLoginScreen.swift */; };
 		4CEAECB329A236A500449F92 /* ColorGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEAECB229A236A500449F92 /* ColorGuide.swift */; };
+		4CF0E65B29A8DFC600173976 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0E65A29A8DFC600173976 /* SocialMediaButton.swift */; };
 		4CFBF60429A659E000D0F806 /* MobileVerifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBF60329A659E000D0F806 /* MobileVerifyScreen.swift */; };
 		4CFBF60629A65A3D00D0F806 /* ColorizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBF60529A65A3D00D0F806 /* ColorizedText.swift */; };
 		4CFBF60829A6620300D0F806 /* UnderlineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBF60729A6620300D0F806 /* UnderlineText.swift */; };
@@ -34,6 +38,9 @@
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		221791591AF4D75EC77E772F /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C09932429A5262E004772A3 /* OrDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrDivider.swift; sourceTree = "<group>"; };
+		4C20103B29A7D1AB007BDF7D /* LoginSubHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubHeader.swift; sourceTree = "<group>"; };
+		4C20103E29A7D263007BDF7D /* LoginBodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBodyText.swift; sourceTree = "<group>"; };
+		4C56487829A7F979005C0B44 /* SocialMediaLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginScreen.swift; sourceTree = "<group>"; };
 		4C8C53AA29A69D780026F684 /* OtpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpTextField.swift; sourceTree = "<group>"; };
 		4C8C742E29A77C05005F6E2D /* EmbeddedUnderlineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedUnderlineText.swift; sourceTree = "<group>"; };
 		4C98AD7029A1595800B6D814 /* TextStylesGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStylesGuide.swift; sourceTree = "<group>"; };
@@ -44,6 +51,7 @@
 		4CC1612B29A5234D00AED7A3 /* ButtonStylesGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylesGuide.swift; sourceTree = "<group>"; };
 		4CD874ED29A2A4A2004D9B6A /* MobileLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileLoginScreen.swift; sourceTree = "<group>"; };
 		4CEAECB229A236A500449F92 /* ColorGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGuide.swift; sourceTree = "<group>"; };
+		4CF0E65A29A8DFC600173976 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
 		4CFBF60329A659E000D0F806 /* MobileVerifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileVerifyScreen.swift; sourceTree = "<group>"; };
 		4CFBF60529A65A3D00D0F806 /* ColorizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedText.swift; sourceTree = "<group>"; };
 		4CFBF60729A6620300D0F806 /* UnderlineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineText.swift; sourceTree = "<group>"; };
@@ -77,12 +85,16 @@
 		4C09932829A52E2D004772A3 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				4C8C53AA29A69D780026F684 /* OtpTextField.swift */,
 				4CBA1F0929A3E37300649304 /* ColorizedFirstCharText.swift */,
 				4CBA1F0B29A3F77E00649304 /* PhoneTextField.swift */,
 				4C09932429A5262E004772A3 /* OrDivider.swift */,
 				4CFBF60529A65A3D00D0F806 /* ColorizedText.swift */,
 				4CFBF60729A6620300D0F806 /* UnderlineText.swift */,
 				4C8C742E29A77C05005F6E2D /* EmbeddedUnderlineText.swift */,
+				4C20103B29A7D1AB007BDF7D /* LoginSubHeader.swift */,
+				4C20103E29A7D263007BDF7D /* LoginBodyText.swift */,
+				4CF0E65A29A8DFC600173976 /* SocialMediaButton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -90,6 +102,7 @@
 		4C1AA0A9299EC212005B9B09 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4C20103D29A7D222007BDF7D /* social_login */,
 				4CFBF60229A659C300D0F806 /* mobile_verify */,
 				4C09932829A52E2D004772A3 /* components */,
 				4CD874EC29A2A436004D9B6A /* mobile_login */,
@@ -106,6 +119,14 @@
 				4CC1612B29A5234D00AED7A3 /* ButtonStylesGuide.swift */,
 			);
 			path = theme;
+			sourceTree = "<group>";
+		};
+		4C20103D29A7D222007BDF7D /* social_login */ = {
+			isa = PBXGroup;
+			children = (
+				4C56487829A7F979005C0B44 /* SocialMediaLoginScreen.swift */,
+			);
+			path = social_login;
 			sourceTree = "<group>";
 		};
 		4C98AD7329A1601E00B6D814 /* Font */ = {
@@ -129,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				4CFBF60329A659E000D0F806 /* MobileVerifyScreen.swift */,
-				4C8C53AA29A69D780026F684 /* OtpTextField.swift */,
 			);
 			path = mobile_verify;
 			sourceTree = "<group>";
@@ -300,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC1612C29A5234D00AED7A3 /* ButtonStylesGuide.swift in Sources */,
+				4CF0E65B29A8DFC600173976 /* SocialMediaButton.swift in Sources */,
 				4CFBF60829A6620300D0F806 /* UnderlineText.swift in Sources */,
 				4CEAECB329A236A500449F92 /* ColorGuide.swift in Sources */,
 				4CBA1F0A29A3E37300649304 /* ColorizedFirstCharText.swift in Sources */,
@@ -308,6 +329,9 @@
 				4CFBF60429A659E000D0F806 /* MobileVerifyScreen.swift in Sources */,
 				4C98AD7129A1595800B6D814 /* TextStylesGuide.swift in Sources */,
 				4CFBF60629A65A3D00D0F806 /* ColorizedText.swift in Sources */,
+				4C56487929A7F979005C0B44 /* SocialMediaLoginScreen.swift in Sources */,
+				4C20103C29A7D1AB007BDF7D /* LoginSubHeader.swift in Sources */,
+				4C20103F29A7D263007BDF7D /* LoginBodyText.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				4CD874EE29A2A4A2004D9B6A /* MobileLoginScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,

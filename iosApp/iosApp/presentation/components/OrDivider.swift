@@ -11,19 +11,21 @@ import SwiftUI
 struct OrDivider: View {
     var body: some View {
         HStack(alignment: .center) {
-            Capsule()
+            Rectangle()
                 .frame(width: .infinity, height: 5)
-                .offset(.init(width: 0, height: 2))
                 .foregroundColor(Color.secondaryContainerColor)
-                
+                .cornerRadius(50, corners: [.topLeft, .bottomLeft])
+                .offset(.init(width: 0, height: 2))
+            
             Text("or")
                 .titleMediumStyle()
                 .foregroundColor(Color.onBackgroundColor.opacity(0.8))
             
-            Capsule()
+            Rectangle()
                 .frame(width: .infinity, height: 5)
-                .offset(.init(width: 0, height: 2))
                 .foregroundColor(Color.secondaryContainerColor)
+                .cornerRadius(50, corners: [.topRight, .bottomRight])
+                .offset(.init(width: 0, height: 2))
         }
     }
 }
@@ -31,5 +33,22 @@ struct OrDivider: View {
 struct OrDivider_Previews: PreviewProvider {
     static var previews: some View {
         OrDivider()
+    }
+}
+
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
     }
 }

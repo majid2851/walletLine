@@ -13,10 +13,17 @@ struct MobileVerifyScreen: View {
     @State private var isChangeNumberVisible: Bool = false
     @State private var isResendVisible: Bool = false
     @State private var otpText: String = ""
+    @State private var proceed = false
     var body: some View {
         ScrollView {
             VStack {
-                Spacer(minLength: 109)
+                NavigationLink(
+                    destination: SocialMediaLoginScreen(),
+                    isActive: $proceed
+                ) {
+                    EmptyView()
+                }
+                .hidden()
                 
                 ColorizedText(
                     firstWord: "Verify",
@@ -27,11 +34,9 @@ struct MobileVerifyScreen: View {
                     thirdWordColor: Color.primaryColor
                 )
                 .titleLargeStyle()
+                .padding(.top, 109)
                 
-                Text("Enter the 4-digit code we have sent to")
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.onBackgroundColor.opacity(0.8))
-                    .bodyMediumStyle()
+                LoginBodyText(text: "Enter the 4-digit code we have sent to")
                     .padding(.horizontal, 28)
                     .padding(.top, 8)
                 
@@ -53,10 +58,7 @@ struct MobileVerifyScreen: View {
                 HStack(
                     alignment: .lastTextBaseline
                 ) {
-                    Text("Wrong number?")
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.onBackgroundColor.opacity(0.8))
-                        .bodyMediumStyle()
+                    LoginBodyText(text: "Wrong number?")
                     
                     UnderlineText(
                         str: "Change It",
@@ -71,10 +73,7 @@ struct MobileVerifyScreen: View {
                     .padding(.top, 56)
                 
                 VStack {
-                    Text("Didn't received the code?")
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.onBackgroundColor.opacity(0.8))
-                        .bodyMediumStyle()
+                    LoginBodyText(text: "Didn't received the code?")
                     
                     UnderlineText(
                         str: "Resend Code",
@@ -87,7 +86,9 @@ struct MobileVerifyScreen: View {
                 .padding(.top, 43)
                 .opacity(isResendVisible ? 1 : 0)
                 
-                Button {} label: {
+                Button {
+                    proceed = true
+                } label: {
                     Text("Proceed")
                         .primaryButtonStyle()
                 }
@@ -98,7 +99,7 @@ struct MobileVerifyScreen: View {
                 EmbeddedUnderlineText(
                     normalText: "by clicking start you agree with our",
                     underlineText: "Terms and Conditions",
-                    textColor: Color.onBackgroundColor,
+                    textColor: Color.onBackgroundColor.opacity(0.8),
                     underlineTextColor: Color.primaryColor,
                     normalTextFont: DMSans.medium,
                     underlineTextFont: DMSans.bold,
