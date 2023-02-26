@@ -40,7 +40,7 @@ fun FingerRecognition()
     )
     {
         Spacer(modifier = Modifier
-            .width(dimensionResource(id = R.dimen.paddingLayouts7))
+            .width(dimensionResource(id = R.dimen.paddingSmall))
         )
         Image(painter =
         painterResource(id = R.drawable.ic___icon__finger_scan_)
@@ -49,7 +49,7 @@ fun FingerRecognition()
 
         )
         Spacer(modifier = Modifier
-            .width(dimensionResource(id = R.dimen.paddingLayouts10))
+            .width(dimensionResource(id = R.dimen.paddingMedium))
         )
         Text(
             text = stringResource(R.string.useMyFinger),
@@ -59,7 +59,7 @@ fun FingerRecognition()
 
         )
         Spacer(modifier = Modifier
-            .width(dimensionResource(id = R.dimen.paddingLayouts7))
+            .width(dimensionResource(id = R.dimen.paddingSmall))
         )
 
     }

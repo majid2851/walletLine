@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.EntrancePatternHeader
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.FingerRecognition
@@ -22,10 +23,10 @@ import com.walletline.android.android.presentation.wallet.mobile_number.componen
 import com.walletline.android.android.presentation.wallet.theme.Background
 import com.walletline.android.majid.ui.entrance_pattern.component.PasswordPattern
 
-
+@Preview
 @Composable
 fun EntrancePattern(
-    onSubmitPatternClick: () -> Unit)
+    onSubmitPatternClick: () -> Unit=TODO())
 {
     Column(modifier= Modifier
         .fillMaxWidth()
@@ -46,11 +47,11 @@ fun EntrancePattern(
         ButtonSubmit(onClick = {onSubmitPatternClick()}
             , title = stringResource(id = R.string.submitPattern))
         
-        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingLayouts10)))
+        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingMedium)))
         
         Or()
 
-        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingLayouts10)))
+        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingMedium)))
 
         FingerRecognition()
 

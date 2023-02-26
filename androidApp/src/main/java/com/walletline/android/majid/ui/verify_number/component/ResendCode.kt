@@ -38,7 +38,7 @@ fun ResendCode()
 
         )
         Spacer(modifier = Modifier
-            .height(dimensionResource(id = R.dimen.paddingLayouts4)))
+            .height(dimensionResource(id = R.dimen.paddingVerySmall)))
 
         Text(text = twoStyleText(text2 = stringResource(R.string.resendCode),
             color2 = Green,),

@@ -24,7 +24,7 @@ import com.walletline.android.android.presentation.wallet.theme.Green2
 fun Header()
 {
     Column(modifier=Modifier.
-    padding(top = dimensionResource(id = R.dimen.paddingLayouts10))
+    padding(top = dimensionResource(id = R.dimen.paddingMedium))
     )
     {
         Text(

@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.mobile_number.component.Brands
 import com.walletline.android.android.presentation.wallet.mobile_number.component.ButtonSubmit
@@ -22,9 +23,9 @@ import com.walletline.android.android.presentation.wallet.mobile_number.componen
 import com.walletline.android.android.presentation.wallet.mobile_number.component.PhoneIcon
 import com.walletline.android.android.presentation.wallet.mobile_number.component.QuickConnectTitle
 import com.walletline.android.android.presentation.wallet.theme.Background
-
+@Preview
 @Composable
-fun MobileNumber(onSendCodeClick:()->Unit)
+fun MobileNumber(onSendCodeClick:()->Unit=TODO())
 {
     Column(modifier= Modifier
         .fillMaxWidth()

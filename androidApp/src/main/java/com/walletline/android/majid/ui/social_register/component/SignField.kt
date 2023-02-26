@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
@@ -30,7 +31,10 @@ fun SignField(icon:Int=0,title:String="")
     Row(verticalAlignment = Alignment.CenterVertically
         , modifier= Modifier
             .fillMaxWidth()
-            .padding(top = dimensionResource(id = R.dimen.paddingLayouts10))
+            .padding(
+                top = dimensionResource(id = R.dimen.paddingMedium),
+
+            )
             .background(
                 color = Color.Transparent,
                 shape =
@@ -51,7 +55,9 @@ fun SignField(icon:Int=0,title:String="")
             painterResource(id = icon)
             , contentDescription =""
             ,modifier=Modifier.
-            width(dimensionResource(id = R.dimen.signFieldIconWidth))
+            size(dimensionResource(id = R.dimen.signFieldIconWidth))
+            .padding(start = dimensionResource(id = R.dimen.paddingMedium))
+
 
         )
 

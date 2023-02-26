@@ -24,8 +24,8 @@ fun ButtonSubmit(onClick:()->Unit,title:String="")
 {
     Button(modifier= Modifier
         .padding(
-            start = dimensionResource(R.dimen.paddingLayouts10),
-            end = dimensionResource(R.dimen.paddingLayouts10)
+            start = dimensionResource(R.dimen.paddingMedium),
+            end = dimensionResource(R.dimen.paddingMedium)
         )
         .fillMaxWidth()
         .height(dimensionResource(id = R.dimen.buttonSubmitHeight))

@@ -40,8 +40,8 @@ fun PhoneField()
     Row(modifier= Modifier
         .fillMaxWidth()
         .padding(
-            top = dimensionResource(id = R.dimen.paddingLayouts10),
-            bottom = dimensionResource(id = R.dimen.paddingLayouts10)
+            top = dimensionResource(id = R.dimen.paddingMedium),
+            bottom = dimensionResource(id = R.dimen.paddingMedium)
         )
         .height(dimensionResource(id = R.dimen.heightPhoneField))
         .background(
@@ -73,7 +73,7 @@ fun PhoneField()
 
 
 
-        Spacer(modifier=Modifier.width(dimensionResource(id = R.dimen.paddingLayouts4)))
+        Spacer(modifier=Modifier.width(dimensionResource(id = R.dimen.paddingVerySmall)))
 
         Box(modifier= Modifier
             .width(dimensionResource(id = R.dimen.line_width_1))

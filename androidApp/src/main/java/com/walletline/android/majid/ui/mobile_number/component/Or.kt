@@ -26,8 +26,8 @@ fun Or()
         modifier = Modifier
             .fillMaxWidth()
             .padding(
-                start = dimensionResource(id = R.dimen.paddingLayouts10),
-                end = dimensionResource(id = R.dimen.paddingLayouts10),
+                start = dimensionResource(id = R.dimen.paddingMedium),
+                end = dimensionResource(id = R.dimen.paddingMedium),
             ),
     )
     {

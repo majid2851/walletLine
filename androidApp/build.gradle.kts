@@ -1,5 +1,3 @@
-import KotlinPlugins.kapt
-import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
 
 plugins {
     id(Plugins.AndroidApplication)
@@ -87,7 +85,6 @@ dependencies {
     implementation(Compose.activity)
     implementation(Compose.viewModels)
     implementation(Compose.runtime)
-    implementation(Compose.composeLock)
     implementation(Compose.compiler)
     implementation(Compose.navigation)
 

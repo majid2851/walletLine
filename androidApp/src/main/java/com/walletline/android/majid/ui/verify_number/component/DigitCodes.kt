@@ -39,7 +39,7 @@ fun DigitCodes()
     val codesList by remember {
         mutableStateOf(mutableStateListOf<String>())
     }
-    var stateColor by remember {
+    val stateColor by remember {
         mutableStateOf(mutableStateListOf<Color>())
     }
 
@@ -54,7 +54,7 @@ fun DigitCodes()
     stateColor.add(Black)
 
     LazyRow(modifier=Modifier.
-        padding(top = dimensionResource(id = R.dimen.paddingLayouts30)))
+        padding(top = dimensionResource(id = R.dimen.paddingVeryLarge)))
     {
         itemsIndexed(codesList)
         {index,item->

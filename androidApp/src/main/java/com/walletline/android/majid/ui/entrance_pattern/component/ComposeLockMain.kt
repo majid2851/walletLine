@@ -21,14 +21,12 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.input.pointer.pointerInteropFilter
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.mrhwsn.composelock.Line
 import com.walletline.android.majid.constants.Utils
 import com.walletline.android.majid.ui.entrance_pattern.pattern_model.ComposeLockCallback
 import com.walletline.android.majid.ui.entrance_pattern.pattern_model.Dot
+import com.walletline.android.majid.ui.entrance_pattern.pattern_model.Line
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlin.math.log
-
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable

@@ -18,7 +18,7 @@ fun PhoneIcon()
 {
     Box(
         modifier = Modifier
-            .padding(top = dimensionResource(id = R.dimen.paddingLayouts10))
+            .padding(top = dimensionResource(id = R.dimen.paddingMedium))
     )
     {
         Image(

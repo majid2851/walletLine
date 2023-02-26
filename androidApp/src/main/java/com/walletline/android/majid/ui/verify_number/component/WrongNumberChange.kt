@@ -20,7 +20,7 @@ import com.walletline.android.android.presentation.wallet.twoStyleText
 fun WrongNumberChange()
 {
     Row(modifier=Modifier.padding(top =
-        dimensionResource(id = R.dimen.paddingLayouts20)))
+        dimensionResource(id = R.dimen.paddingLarge)))
     {
         Text(text = twoStyleText(stringResource(R.string.wrongNumber)
             , color1 = Black_CC,
@@ -28,7 +28,7 @@ fun WrongNumberChange()
             color2 = Green
         ),
             fontWeight = FontWeight(400),
-            fontSize = mn_font_desc,
+            fontSize = mn_font_desc,//dimensionResource(id = R.dimen.testFont).value.sp,
             textAlign = TextAlign.Center,
             modifier = Modifier
         )

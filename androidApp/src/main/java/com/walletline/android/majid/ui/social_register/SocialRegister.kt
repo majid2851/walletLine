@@ -44,11 +44,11 @@ fun SocialRegister()
         DescriptionTv(desc = stringResource(R.string.toAccessEasily))
 
         Spacer(modifier = Modifier
-            .height(dimensionResource(id = R.dimen.paddingLayouts10)))
+            .height(dimensionResource(id = R.dimen.paddingMedium)))
 
         SignField(
             icon = R.drawable.ic_flat_color_icons_google,
-            title = stringResource(R.string.signWithGoogle)
+            title = stringResource(R.string.signWithGoogle),
         )
 
         SignField(
@@ -62,11 +62,11 @@ fun SocialRegister()
         )
 
         Spacer(modifier = Modifier
-            .height(dimensionResource(id = R.dimen.paddingLayouts30)))
+            .height(dimensionResource(id = R.dimen.paddingVeryLarge)))
         Or()
 
         Spacer(modifier = Modifier
-            .height(dimensionResource(id = R.dimen.paddingLayouts10)))
+            .height(dimensionResource(id = R.dimen.paddingMedium)))
         DescriptionTv(desc = stringResource(R.string.usePhoneToLogin))
 
 

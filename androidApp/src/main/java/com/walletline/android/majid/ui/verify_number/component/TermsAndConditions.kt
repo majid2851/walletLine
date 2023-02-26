@@ -31,9 +31,9 @@ fun TermsAndConditions()
         fontSize = mn_font_conditions_term,
         textAlign = TextAlign.Center,
         modifier = Modifier.padding(
-            start = dimensionResource(id = R.dimen.paddingLayouts20),
-            end = dimensionResource(id = R.dimen.paddingLayouts20),
-            top = dimensionResource(id = R.dimen.paddingLayouts10))
+            start = dimensionResource(id = R.dimen.paddingLarge),
+            end = dimensionResource(id = R.dimen.paddingLarge),
+            top = dimensionResource(id = R.dimen.paddingMedium))
     )
 
 
