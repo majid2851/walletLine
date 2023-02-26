@@ -2,7 +2,11 @@ package com.walletline.android.android.presentation.wallet.entrance_pattern.comp
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -13,12 +17,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black_1C
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green2
 import com.walletline.android.R
-import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_conditions_term
 import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_use_my_fingerprint
+import com.walletline.android.android.presentation.wallet.theme.Black
+import com.walletline.android.android.presentation.wallet.theme.Black_1C
 
 @Preview
 @Composable
@@ -38,15 +40,16 @@ fun FingerRecognition()
     )
     {
         Spacer(modifier = Modifier
-            .width(dimensionResource(id = R.dimen.paddingLayouts7))
+            .width(dimensionResource(id = R.dimen.paddingSmall))
         )
         Image(painter =
         painterResource(id = R.drawable.ic___icon__finger_scan_)
             , contentDescription = ""
+            ,modifier=Modifier.size(dimensionResource(id = R.dimen.fingerScanImgSize))
 
         )
         Spacer(modifier = Modifier
-            .width(dimensionResource(id = R.dimen.paddingLayouts10))
+            .width(dimensionResource(id = R.dimen.paddingMedium))
         )
         Text(
             text = stringResource(R.string.useMyFinger),
@@ -56,7 +59,7 @@ fun FingerRecognition()
 
         )
         Spacer(modifier = Modifier
-            .width(dimensionResource(id = R.dimen.paddingLayouts7))
+            .width(dimensionResource(id = R.dimen.paddingSmall))
         )
 
     }

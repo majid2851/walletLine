@@ -7,10 +7,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black_1C
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_desc
+import com.walletline.android.android.presentation.wallet.theme.Green
 import com.walletline.android.android.presentation.wallet.twoStyleText
 
 @Composable

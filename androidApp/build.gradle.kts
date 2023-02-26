@@ -1,9 +1,13 @@
+
 plugins {
     id(Plugins.AndroidApplication)
-    kotlin(KotlinPlugins.Android)
     id(Plugins.Ksp) version Plugins.KspVersion
     id(GradleVersions.Plugin) version GradleVersions.Version
+
+    kotlin(KotlinPlugins.Android)
+    kotlin(KotlinPlugins.kapt)
     kotlin(KotlinPlugins.Serialization) version Kotlin.Version
+
 }
 
 android {
@@ -16,6 +20,8 @@ android {
         versionCode = AndroidApplication.VersionCode
         versionName = AndroidApplication.VersionName
     }
+
+
     buildFeatures {
         compose = true
     }
@@ -48,6 +54,7 @@ android {
         }
     }
 
+
     // KSP
     // to make sure the IDE looks at the generated folder
     applicationVariants.all {
@@ -65,6 +72,7 @@ android {
 
 dependencies {
     implementation(project(":shared"))
+
     val composeBOM = platform(Compose.composeBOM)
     implementation(composeBOM)
     androidTestImplementation(composeBOM)
@@ -110,6 +118,10 @@ dependencies {
 
     implementation(RESPONSIVE.SSP)
     implementation(RESPONSIVE.SDP)
+
+    //-------------------------------------------
+
+
 }
 
 tasks.named<com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask>("dependencyUpdates")

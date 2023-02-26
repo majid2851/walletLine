@@ -9,10 +9,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black_CC
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_conditions_term
+import com.walletline.android.android.presentation.wallet.theme.Black_CC
+import com.walletline.android.android.presentation.wallet.theme.Green
 import com.walletline.android.android.presentation.wallet.twoStyleText
 
 @Preview
@@ -31,9 +31,9 @@ fun TermsAndConditions()
         fontSize = mn_font_conditions_term,
         textAlign = TextAlign.Center,
         modifier = Modifier.padding(
-            start = dimensionResource(id = R.dimen.paddingLayouts20),
-            end = dimensionResource(id = R.dimen.paddingLayouts20),
-            top = dimensionResource(id = R.dimen.paddingLayouts10))
+            start = dimensionResource(id = R.dimen.paddingLarge),
+            end = dimensionResource(id = R.dimen.paddingLarge),
+            top = dimensionResource(id = R.dimen.paddingMedium))
     )
 
 

@@ -10,9 +10,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Gray_60
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.mobile_number.mn_font_quick_connect
+import com.walletline.android.android.presentation.wallet.theme.Gray_60
 
 @Preview
 @Composable
