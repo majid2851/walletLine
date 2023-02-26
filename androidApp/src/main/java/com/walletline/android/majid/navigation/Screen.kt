@@ -7,6 +7,8 @@ sealed class Screen(val route:String)
     object EntrancePattern:Screen("entrancePattern")
     object SocialRegister:Screen("socialRegister")
 
+    object RegistrationFinished:Screen("registrationFinished")
+
 
 
 }
