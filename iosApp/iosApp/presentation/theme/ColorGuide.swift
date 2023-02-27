@@ -45,8 +45,8 @@ extension Color {
     
     public static let surfaceColor: Color = Color("surface")
     public static let onSurfaceColor: Color = Color("onSurface")
-    public static let surfaceContainerColor: Color = Color("surfaceContainer")
-    public static let onSurfaceContainerColor: Color = Color("onSurfaceContainer")
+    public static let surfaceVariantColor: Color = Color("surfaceVariant")
+    public static let onSurfaceVariantColor: Color = Color("onSurfaceVariant")
     
     public static let backgroundColor: Color = Color("background")
     public static let onBackgroundColor: Color = Color("onBackground")

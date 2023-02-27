@@ -11,6 +11,7 @@ import SwiftUI
 struct MobileLoginScreen: View {
     @State var phoneText: String = ""
     @State private var proceed = false
+    @State var selectedCountry: String = "NL +31"
     var body: some View {
         ScrollView {
             VStack {
@@ -26,9 +27,7 @@ struct MobileLoginScreen: View {
                     .frame(width: 130, height: 130)
                     .padding(.top, 36)
                 
-                Text("enter your")
-                    .titleMediumStyle()
-                    .foregroundColor(Color.onBackgroundColor.opacity(0.6))
+                LoginSubHeader(text: "enter your")
                     .padding(.top, 16)
                 
                 ColorizedFirstCharText(
@@ -40,12 +39,10 @@ struct MobileLoginScreen: View {
                 .titleLargeStyle()
                 .padding(.bottom, 20)
                 
-                Text("We will provide you with 4 digit verification code")
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.onBackgroundColor.opacity(0.8))
+                LoginBodyText(text: "We will provide you with 4 digit verification code")
                     .padding(.horizontal, 30)
                 
-                PhoneTextField(text: phoneText)
+                PhoneTextField(text: $phoneText, selected: $selectedCountry)
                     .padding(.vertical, 16)
                     .padding(.horizontal, 20)
                 
@@ -64,9 +61,7 @@ struct MobileLoginScreen: View {
                     .padding(.horizontal, 30)
                     .padding(.top, 42)
                 
-                Text("Use your regular accounts to quick connect")
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.onBackgroundColor.opacity(0.8))
+                LoginBodyText(text: "Use your regular accounts to quick connect")
                     .padding(.top, 22)
                     .padding(.horizontal, 30)
                 
