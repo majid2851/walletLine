@@ -4,4 +4,5 @@ object Plugins {
     const val AndroidLibrary = "com.android.library"
     const val SqlDelight = "com.squareup.sqldelight"
     const val Ksp = "com.google.devtools.ksp"
+    const val Hilt="dagger.hilt.android.plugin"
 }

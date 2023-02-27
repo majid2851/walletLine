@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingAll">@dimen/_10sdp</dimen>
+    <dimen name="paddingSmall">@dimen/_7sdp</dimen>
+    <dimen name="paddingVerySmall">@dimen/_4sdp</dimen>
+    <dimen name="paddingMedium">@dimen/_10sdp</dimen>
+    <dimen name="paddingLarge">@dimen/_20sdp</dimen>
+    <dimen name="paddingVeryLarge">@dimen/_30sdp</dimen>
+
+    <dimen name="paddingOrTopBottom">@dimen/_25sdp</dimen>
+    <dimen name="paddingLayouts150">@dimen/_150sdp</dimen>
+    <dimen name="paddingDesc">@dimen/_8sdp</dimen>
+    <dimen name="paddingTopDesc">@dimen/_15sdp</dimen>
+    <dimen name="circle_big_pattern_padding">@dimen/_30sdp</dimen>
+    <dimen name="mobiSystemPadding">@dimen/_3sdp</dimen>
+
+
+
+
+</resources>

@@ -4,9 +4,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Black_1C
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green
 import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.theme.Black_1C
+import com.walletline.android.android.presentation.wallet.theme.Green
 import com.walletline.android.android.presentation.wallet.twoStyleText
 
 @Preview

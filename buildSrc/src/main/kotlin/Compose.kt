@@ -31,4 +31,7 @@ object Compose {
 
     private const val RuntimeVersion = "1.3.3"
     val runtime by lazy { "androidx.compose.runtime:runtime:$RuntimeVersion" }
+
+    private const val ComposeLock="1.0.0"
+    val composeLock by lazy{"com.github.AbyssSpecter:ComposeLock:$ComposeLock"}
 }

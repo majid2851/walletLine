@@ -10,20 +10,23 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Background
+import androidx.compose.ui.tooling.preview.Preview
 import com.walletline.android.R
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.EntrancePatternHeader
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.FingerRecognition
 import com.walletline.android.android.presentation.wallet.entrance_pattern.component.IgnoreSettingPattern_Tv
 import com.walletline.android.android.presentation.wallet.mobile_number.component.ButtonSubmit
 import com.walletline.android.android.presentation.wallet.mobile_number.component.Or
+import com.walletline.android.android.presentation.wallet.theme.Background
 import com.walletline.android.majid.ui.entrance_pattern.component.PasswordPattern
 
-
+@Preview
 @Composable
-fun EntrancePattern(onSubmitPatternClick:()->Unit)
+fun EntrancePattern(
+    onSubmitPatternClick: () -> Unit=TODO())
 {
     Column(modifier= Modifier
         .fillMaxWidth()
@@ -39,16 +42,16 @@ fun EntrancePattern(onSubmitPatternClick:()->Unit)
         
         EntrancePatternHeader()
 
-        PasswordPattern()
+        PasswordPattern(LocalContext.current)
 
         ButtonSubmit(onClick = {onSubmitPatternClick()}
             , title = stringResource(id = R.string.submitPattern))
         
-        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingLayouts10)))
+        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingMedium)))
         
         Or()
 
-        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingLayouts10)))
+        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.paddingMedium)))
 
         FingerRecognition()
 

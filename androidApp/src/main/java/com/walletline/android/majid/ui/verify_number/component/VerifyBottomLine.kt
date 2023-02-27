@@ -2,15 +2,14 @@ package com.walletline.android.android.presentation.wallet.verify_number.compone
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.height 
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
-import com.codingwithmitch.kmm_learning_mitch.android.presentation.theme.Green5
 import com.walletline.android.R
+import com.walletline.android.android.presentation.wallet.theme.Green5
 
 @Composable
 fun VerifyBottomLine()

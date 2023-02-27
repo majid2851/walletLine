@@ -1,4 +1,4 @@
-package com.codingwithmitch.kmm_learning_mitch.android.presentation.theme
+package com.walletline.android.android.presentation.wallet.theme
 
 import androidx.compose.ui.graphics.Color
 
