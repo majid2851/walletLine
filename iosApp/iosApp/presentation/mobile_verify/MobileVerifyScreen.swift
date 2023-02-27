@@ -18,7 +18,7 @@ struct MobileVerifyScreen: View {
         ScrollView {
             VStack {
                 NavigationLink(
-                    destination: SocialMediaLoginScreen(),
+                    destination: PatternScreen(),
                     isActive: $proceed
                 ) {
                     EmptyView()

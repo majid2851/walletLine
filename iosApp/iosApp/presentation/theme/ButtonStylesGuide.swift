@@ -60,6 +60,7 @@ struct PrimaryButtonStyle: ViewModifier {
 
 struct SocialMediaButtonStyle: ViewModifier {
     @Environment(\.isEnabled) var isEnabled
+    var radius: CGFloat = 50
     
     var backgroundColor: Color {
         isEnabled ? Color.white : Color.white.opacity(0.6)
@@ -77,7 +78,7 @@ struct SocialMediaButtonStyle: ViewModifier {
             .foregroundColor(contentColor)
             .padding(.horizontal, 14)
             .background(
-                Capsule(style: .continuous)
+                RoundedCorner(radius: radius)
                     .stroke(Color.onBackgroundColor)
             )
     }
@@ -87,8 +88,8 @@ extension View {
     public func primaryButtonStyle() -> some View {
         modifier(PrimaryButtonStyle())
     }
-    public func socialMediaButtonStyle() -> some View {
-        modifier(SocialMediaButtonStyle())
+    public func socialMediaButtonStyle(radius: CGFloat = 50) -> some View {
+        modifier(SocialMediaButtonStyle(radius: radius))
     }
 }
 

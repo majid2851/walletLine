@@ -8,7 +8,8 @@
 
 import SwiftUI
 
-struct SocialMediaButton: View {
+struct LeadingIconButton: View {
+    var radius: CGFloat = 50
     let image: Image
     let text: String
     let action: () -> Void
@@ -23,7 +24,7 @@ struct SocialMediaButton: View {
                     }
                     Text(text)
                 }
-                .socialMediaButtonStyle()
+                .socialMediaButtonStyle(radius: radius)
             }
         )
     }
@@ -31,9 +32,11 @@ struct SocialMediaButton: View {
 
 struct SocialMediaButton_Previews: PreviewProvider {
     static var previews: some View {
-        SocialMediaButton(
+        LeadingIconButton(
             image: Image("facebook_icon"),
             text: "Sign in with Facebook"
-        ) {}
+        ) {
+            
+        }
     }
 }

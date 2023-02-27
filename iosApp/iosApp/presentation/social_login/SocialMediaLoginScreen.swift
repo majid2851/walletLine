@@ -33,19 +33,19 @@ struct SocialMediaLoginScreen: View {
                     .padding(.top, 1)
                 
                 Group {
-                    SocialMediaButton(
+                    LeadingIconButton(
                         image: Image("google_icon"),
                         text: "Sign in with Google",
                         action: {}
                     )
                     
-                    SocialMediaButton(
+                    LeadingIconButton(
                         image: Image("facebook_icon"),
                         text: "Sign in with Facebook",
                         action: {}
                     )
                     
-                    SocialMediaButton(
+                    LeadingIconButton(
                         image: Image("apple_icon"),
                         text: "Sign in with Apple",
                         action: {}

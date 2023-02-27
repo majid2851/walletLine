@@ -13,6 +13,9 @@
 		4C09932529A5262E004772A3 /* OrDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09932429A5262E004772A3 /* OrDivider.swift */; };
 		4C20103C29A7D1AB007BDF7D /* LoginSubHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20103B29A7D1AB007BDF7D /* LoginSubHeader.swift */; };
 		4C20103F29A7D263007BDF7D /* LoginBodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20103E29A7D263007BDF7D /* LoginBodyText.swift */; };
+		4C4E166729AB531400017A39 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E166629AB531400017A39 /* Components.swift */; };
+		4C4E166929AB534600017A39 /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E166829AB534600017A39 /* LockScreen.swift */; };
+		4C4E166B29AB536E00017A39 /* LockScreenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E166A29AB536E00017A39 /* LockScreenAdapter.swift */; };
 		4C56487929A7F979005C0B44 /* SocialMediaLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56487829A7F979005C0B44 /* SocialMediaLoginScreen.swift */; };
 		4C8C53AB29A69D780026F684 /* OtpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C53AA29A69D780026F684 /* OtpTextField.swift */; };
 		4C8C742F29A77C05005F6E2D /* EmbeddedUnderlineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C742E29A77C05005F6E2D /* EmbeddedUnderlineText.swift */; };
@@ -22,9 +25,10 @@
 		4CBA1F0A29A3E37300649304 /* ColorizedFirstCharText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA1F0929A3E37300649304 /* ColorizedFirstCharText.swift */; };
 		4CBA1F0C29A3F77E00649304 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA1F0B29A3F77E00649304 /* PhoneTextField.swift */; };
 		4CC1612C29A5234D00AED7A3 /* ButtonStylesGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1612B29A5234D00AED7A3 /* ButtonStylesGuide.swift */; };
+		4CD1BFA029A93C5500A71A39 /* PatternScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1BF9F29A93C5500A71A39 /* PatternScreen.swift */; };
 		4CD874EE29A2A4A2004D9B6A /* MobileLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD874ED29A2A4A2004D9B6A /* MobileLoginScreen.swift */; };
 		4CEAECB329A236A500449F92 /* ColorGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEAECB229A236A500449F92 /* ColorGuide.swift */; };
-		4CF0E65B29A8DFC600173976 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0E65A29A8DFC600173976 /* SocialMediaButton.swift */; };
+		4CF0E65B29A8DFC600173976 /* LeadingIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0E65A29A8DFC600173976 /* LeadingIconButton.swift */; };
 		4CFBF60429A659E000D0F806 /* MobileVerifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBF60329A659E000D0F806 /* MobileVerifyScreen.swift */; };
 		4CFBF60629A65A3D00D0F806 /* ColorizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBF60529A65A3D00D0F806 /* ColorizedText.swift */; };
 		4CFBF60829A6620300D0F806 /* UnderlineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBF60729A6620300D0F806 /* UnderlineText.swift */; };
@@ -40,6 +44,9 @@
 		4C09932429A5262E004772A3 /* OrDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrDivider.swift; sourceTree = "<group>"; };
 		4C20103B29A7D1AB007BDF7D /* LoginSubHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubHeader.swift; sourceTree = "<group>"; };
 		4C20103E29A7D263007BDF7D /* LoginBodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBodyText.swift; sourceTree = "<group>"; };
+		4C4E166629AB531400017A39 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		4C4E166829AB534600017A39 /* LockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreen.swift; sourceTree = "<group>"; };
+		4C4E166A29AB536E00017A39 /* LockScreenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenAdapter.swift; sourceTree = "<group>"; };
 		4C56487829A7F979005C0B44 /* SocialMediaLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginScreen.swift; sourceTree = "<group>"; };
 		4C8C53AA29A69D780026F684 /* OtpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpTextField.swift; sourceTree = "<group>"; };
 		4C8C742E29A77C05005F6E2D /* EmbeddedUnderlineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedUnderlineText.swift; sourceTree = "<group>"; };
@@ -49,9 +56,10 @@
 		4CBA1F0929A3E37300649304 /* ColorizedFirstCharText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedFirstCharText.swift; sourceTree = "<group>"; };
 		4CBA1F0B29A3F77E00649304 /* PhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
 		4CC1612B29A5234D00AED7A3 /* ButtonStylesGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylesGuide.swift; sourceTree = "<group>"; };
+		4CD1BF9F29A93C5500A71A39 /* PatternScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternScreen.swift; sourceTree = "<group>"; };
 		4CD874ED29A2A4A2004D9B6A /* MobileLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileLoginScreen.swift; sourceTree = "<group>"; };
 		4CEAECB229A236A500449F92 /* ColorGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGuide.swift; sourceTree = "<group>"; };
-		4CF0E65A29A8DFC600173976 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
+		4CF0E65A29A8DFC600173976 /* LeadingIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingIconButton.swift; sourceTree = "<group>"; };
 		4CFBF60329A659E000D0F806 /* MobileVerifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileVerifyScreen.swift; sourceTree = "<group>"; };
 		4CFBF60529A65A3D00D0F806 /* ColorizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedText.swift; sourceTree = "<group>"; };
 		4CFBF60729A6620300D0F806 /* UnderlineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineText.swift; sourceTree = "<group>"; };
@@ -94,7 +102,7 @@
 				4C8C742E29A77C05005F6E2D /* EmbeddedUnderlineText.swift */,
 				4C20103B29A7D1AB007BDF7D /* LoginSubHeader.swift */,
 				4C20103E29A7D263007BDF7D /* LoginBodyText.swift */,
-				4CF0E65A29A8DFC600173976 /* SocialMediaButton.swift */,
+				4CF0E65A29A8DFC600173976 /* LeadingIconButton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 		4C1AA0A9299EC212005B9B09 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4CD1BF9E29A93C2B00A71A39 /* pattern_screen */,
 				4C20103D29A7D222007BDF7D /* social_login */,
 				4CFBF60229A659C300D0F806 /* mobile_verify */,
 				4C09932829A52E2D004772A3 /* components */,
@@ -129,6 +138,16 @@
 			path = social_login;
 			sourceTree = "<group>";
 		};
+		4C4E166529AB52F500017A39 /* lock_pattern */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E166629AB531400017A39 /* Components.swift */,
+				4C4E166829AB534600017A39 /* LockScreen.swift */,
+				4C4E166A29AB536E00017A39 /* LockScreenAdapter.swift */,
+			);
+			path = lock_pattern;
+			sourceTree = "<group>";
+		};
 		4C98AD7329A1601E00B6D814 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +155,15 @@
 				4C98AD7429A1606900B6D814 /* dm_sans_regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		4CD1BF9E29A93C2B00A71A39 /* pattern_screen */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E166529AB52F500017A39 /* lock_pattern */,
+				4CD1BF9F29A93C5500A71A39 /* PatternScreen.swift */,
+			);
+			path = pattern_screen;
 			sourceTree = "<group>";
 		};
 		4CD874EC29A2A436004D9B6A /* mobile_login */ = {
@@ -320,21 +348,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC1612C29A5234D00AED7A3 /* ButtonStylesGuide.swift in Sources */,
-				4CF0E65B29A8DFC600173976 /* SocialMediaButton.swift in Sources */,
+				4CF0E65B29A8DFC600173976 /* LeadingIconButton.swift in Sources */,
 				4CFBF60829A6620300D0F806 /* UnderlineText.swift in Sources */,
 				4CEAECB329A236A500449F92 /* ColorGuide.swift in Sources */,
 				4CBA1F0A29A3E37300649304 /* ColorizedFirstCharText.swift in Sources */,
 				4CBA1F0C29A3F77E00649304 /* PhoneTextField.swift in Sources */,
 				4C8C742F29A77C05005F6E2D /* EmbeddedUnderlineText.swift in Sources */,
+				4C4E166929AB534600017A39 /* LockScreen.swift in Sources */,
 				4CFBF60429A659E000D0F806 /* MobileVerifyScreen.swift in Sources */,
 				4C98AD7129A1595800B6D814 /* TextStylesGuide.swift in Sources */,
+				4CD1BFA029A93C5500A71A39 /* PatternScreen.swift in Sources */,
 				4CFBF60629A65A3D00D0F806 /* ColorizedText.swift in Sources */,
 				4C56487929A7F979005C0B44 /* SocialMediaLoginScreen.swift in Sources */,
 				4C20103C29A7D1AB007BDF7D /* LoginSubHeader.swift in Sources */,
 				4C20103F29A7D263007BDF7D /* LoginBodyText.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				4C4E166B29AB536E00017A39 /* LockScreenAdapter.swift in Sources */,
 				4CD874EE29A2A4A2004D9B6A /* MobileLoginScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				4C4E166729AB531400017A39 /* Components.swift in Sources */,
 				4C09932529A5262E004772A3 /* OrDivider.swift in Sources */,
 				4C8C53AB29A69D780026F684 /* OtpTextField.swift in Sources */,
 			);
