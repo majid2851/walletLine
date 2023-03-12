@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="MobilSystemDesc">Mobile Warehouse Management System</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="line">Line</string>
+    <string name="plus">+</string>
+    <string name="manage_wallet">manage your wallet easily!</string>
+    <string name="created_by">created by</string>
+
+
+
+
+    <string name="mobile_number_desc">We will provide you with 4 digit verification code</string>
+
+
     <string name="login">Login</string>
     <string name="enterYour">enter your</string>
     <string name="mobileNumber">Mobile Number</string>
     <string name="mobile">Moblie</string>
-    <string name="number">Number</string>
-    <string name="description">We will provide you with 4 digit verification code</string>
+
     <string name="sendCode">Send Code</string>
-    <string name="or">Or</string>
+    <string name="or">or</string>
     <string name="quickConnect">Use your regular accounts to quick connect</string>
     <string name="countryCode">NL +31</string>
     <string name="phoneNumberHint">Phone Number</string>
     <string name="verify">Verify</string>
-    <string name="wonder">!</string>
+    <string name="number">Number</string>
+    <string name="exclamation_mark">!</string>
     <string name="enter4DigitDesc">Enter the 4-digit code we have sent to</string>
     <string name="tools_phoneNumber">+98 00 000 000 00.</string>
     <string name="wrongNumber">Wrong Number?</string>
@@ -22,7 +34,7 @@
     <string name="resendCode">Resend Code</string>
     <string name="proceed">Proceed</string>
     <string name="term1">by clicking start you agree with our</string>
-    <string name="term2">Teams and Conditions</string>
+    <string name="term2">Terms and Conditions</string>
     <string name="setYourOwn">set your own</string>
     <string name="entrance">Entrance</string>
     <string name="pattern">Pattern</string>
@@ -48,9 +60,23 @@
     <string name="account_recovery">Do you want to improve account recovery?</string>
     <string name="link_profile"><u>Link your profile to your socials</u></string>
     <string name="account_created_message">Dear user your account has been created successfully. Enjoy using app</string>
-    <string name="manage_wallet">manage your wallet easily!</string>
-    <string name="created_by">created by</string>
+
+
     <string name="account">Account</string>
-    <string name="created">Created!</string>
+    <string name="created">Created</string>
     <string name="start_fun">Start fun!</string>
+
+
+    <string name="desc_heart_icon">heart icon</string>
+    <string name="desc_phone_icon">phone icon</string>
+    <string name="desc_google_icon">google icon</string>
+    <string name="desc_facebook_icon">facebook icon</string>
+    <string name="desc_apple_icon">apple icon</string>
+    <string name="desc_drop_down_icon">drop down arrow icon</string>
+    <string name="desc_cloud">layered colorful clouds</string>
+    <string name="desc_whale_icon">whale icon</string>
+    <string name="desc_finger">finger recognition</string>
+    <string name="desc_walletline_logo">WalletLine Logo</string>
+
+
 </resources>

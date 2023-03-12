@@ -83,7 +83,8 @@ private val WalletLineDarkColorScheme = darkColorScheme(
 fun WalletLineTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // Keep this value false in development
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -100,18 +101,18 @@ fun WalletLineTheme(
             val activity = view.context as Activity
             activity.window.statusBarColor = Color.Transparent.toArgb()
             WindowCompat.getInsetsController(activity.window, view).isAppearanceLightStatusBars =
-                darkTheme
+                !darkTheme
         }
     }
 
-    val spacing = Spacing()
+    val padding = Padding
 
     CompositionLocalProvider(
-        LocalSpacing provides spacing,
+        LocalPadding provides padding,
     ) {
         MaterialTheme(
             colorScheme = colorScheme,
-            typography = Typography,
+            typography = typography(),
             content = content
         )
     }
