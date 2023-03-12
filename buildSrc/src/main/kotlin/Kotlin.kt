@@ -4,7 +4,7 @@ object Kotlin {
     private const val DatetimeVersion = "0.4.0"
     val datetime by lazy { "org.jetbrains.kotlinx:kotlinx-datetime:${DatetimeVersion}" }
 
-    private const val SerializationVersion = "1.4.1"
+    private const val SerializationVersion = "1.5.0"
     val serializationCore by lazy { "org.jetbrains.kotlinx:kotlinx-serialization-core:${SerializationVersion}" }
     val serializationJson by lazy { "org.jetbrains.kotlinx:kotlinx-serialization-json:${SerializationVersion}" }
 

@@ -1,5 +1,5 @@
 object Koin {
-    private const val CoreVersion = "3.3.2"
+    private const val CoreVersion = "3.3.3"
     private const val AndroidVersion = "3.3.2"
     private const val ComposeVersion = "3.4.1"
 

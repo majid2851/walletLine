@@ -116,11 +116,6 @@ dependencies {
     implementation(Kermit.kermitLogger)
 
 
-    implementation(RESPONSIVE.SSP)
-    implementation(RESPONSIVE.SDP)
-
-    //-------------------------------------------
-
 
 }
 
