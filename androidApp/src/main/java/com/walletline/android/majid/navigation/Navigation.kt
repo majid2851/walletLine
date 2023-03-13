@@ -10,7 +10,7 @@ import com.walletline.android.android.presentation.wallet.entrance_pattern.Entra
 import com.walletline.android.android.presentation.wallet.mobile_number.MobileNumber
 import com.walletline.android.android.presentation.wallet.social_register.SocialRegister
 import com.walletline.android.android.presentation.wallet.verify_number.VerifyNumber
-import com.walletline.android.majid.ui.social_register.RegistrationFinished
+import com.walletline.android.majid.ui.register_finished.RegistrationFinished
 
 @Preview
 @Composable
@@ -18,7 +18,7 @@ fun Navigation()
 {
     val navController= rememberNavController()
     NavHost(navController = navController,
-        startDestination = Screen.RegistrationFinished.route)
+        startDestination = Screen.MobileNumber.route)
     {
 
         composable(route = Screen.MobileNumber.route)

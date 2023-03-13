@@ -1,4 +1,4 @@
-package com.walletline.android.majid.ui.social_register.component
+package com.walletline.android.majid.ui.register_finished.component
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height

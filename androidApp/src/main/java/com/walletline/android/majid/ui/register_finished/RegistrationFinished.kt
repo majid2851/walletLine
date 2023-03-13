@@ -1,4 +1,4 @@
-package com.walletline.android.majid.ui.social_register
+package com.walletline.android.majid.ui.register_finished
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -17,12 +17,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.walletline.android.R
-import com.walletline.android.WalletLineTheme
-import com.walletline.android.majid.ui.social_register.component.AccountCreatedRow
-import com.walletline.android.majid.ui.social_register.component.AccountRecoveryColumn
-import com.walletline.android.majid.ui.social_register.component.StartFunButton
+import com.walletline.android.majid.ui.register_finished.component.AccountCreatedRow
+import com.walletline.android.majid.ui.register_finished.component.AccountRecoveryColumn
+import com.walletline.android.majid.ui.register_finished.component.StartFunButton
 
 @Composable
+@Preview
 fun RegistrationFinished() {
     Column(
         modifier = Modifier
@@ -77,10 +77,4 @@ fun RegistrationFinished() {
     }
 }
 
-@Preview
-@Composable
-fun DefaultPreview() {
-    WalletLineTheme {
-        RegistrationFinished()
-    }
-}
+

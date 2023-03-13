@@ -24,7 +24,7 @@ import com.walletline.android.android.presentation.wallet.theme.Background
 
 @Preview
 @Composable
-fun SocialRegister()
+fun SocialRegister( )
 {
     Column(modifier= Modifier
         .fillMaxWidth()
