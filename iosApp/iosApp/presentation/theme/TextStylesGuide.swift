@@ -29,6 +29,7 @@ struct TextStylesGuide: View {
             Text("Body Small")
                 .bodySmallStyle()
             
+            
             Text("Label")
                 .labelSmallStyle()
         }
@@ -50,6 +51,7 @@ struct TitleLargeStyle: ViewModifier {
                     relativeTo: .title
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -63,6 +65,7 @@ struct TitleMediumStyle: ViewModifier {
                     relativeTo: .title2
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -76,6 +79,7 @@ struct TitleSmallStyle: ViewModifier {
                     relativeTo: .title3
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -89,6 +93,7 @@ struct BodyLargeStyle: ViewModifier {
                     relativeTo: .subheadline
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -102,6 +107,7 @@ struct BodyMediumStyle: ViewModifier {
                     relativeTo: .body
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -115,6 +121,7 @@ struct BoldBodyMediumStyle: ViewModifier {
                     relativeTo: .body
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -128,6 +135,7 @@ struct BodySmallStyle: ViewModifier {
                     relativeTo: .body
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 
@@ -141,6 +149,7 @@ struct LabelSmallStyle: ViewModifier {
                     relativeTo: .footnote
                 )
             )
+            .lineSpacing(Padding.small)
     }
 }
 

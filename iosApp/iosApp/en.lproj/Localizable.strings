@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  iosApp
+
+  Created by Mostafa Hosseini on 3/13/23.
+  Copyright © 2023 orgName. All rights reserved.
+*/
+
+"Wallet" = "Wallet";
+"Line" = "Line";
+"manage your wallet easily!" = "manage your wallet easily!";
+"Created by" = "Created by";
+"enter your" = "enter your";
+"Mobile" = "Mobile";
+"Number" = "Number";
+"We will provide you with 4 digit verification code" = "We will provide you with 4 digit verification code";
+"Send Code" = "Send Code";
+"Use your regular accounts to quick connect" = "Use your regular accounts to quick connect";
+"Phone Number" = "Phone Number";
+"Done" = "Done";
+"Verify" = "Verify";
+"Number" = "Number";
+"!" = "!";
+"Wrong number?" = "Wrong number?";
+"Didn't received the code?" = "Didn't received the code?";
+"Resend Code" = "Resend Code";
+"Proceed" = "Proceed";
+"by clicking start you agree with our" = "by clicking start you agree with our";
+"Terms and Conditions" = "Terms and Conditions";
+"access by your" = "access by your";
+"Social" = "Social";
+"Media" = "Media";
+"to access easily by your known access" = "to access easily by your known access";
+"Sign in with Google" = "Sign in with Google";
+"Sign in with Facebook" = "Sign in with Facebook";
+"Sign in with Apple" = "Sign in with Apple";
+"or" = "or";
+"Use your phone number to register or login" = "Use your phone number to register or login";
+"Submit phone number" = "Submit phone number";
+"Account" = "Account";
+"Created" = "Created";
+"Dear user your account has been created successfully. Enjoy using app" = "Dear user your account has been created successfully. Enjoy using app";
+"Start Fun" = "Start Fun";
+"Do you want to improve account recovery?" = "Do you want to improve account recovery?";
+"Link your profile to your socials" = "Link your profile to your socials";
+"set your own" = "set your own";
+"Entrance" = "Entrance";
+"Pattern" = "Pattern";
+"Submit Pattern" = "Submit Pattern";
+"Use my face/finger recognition" = "Use my face/finger recognition";
+"Prefer less secure?" = "Prefer less secure?";
+"Ignore setting pattern" = "Ignore setting pattern";
