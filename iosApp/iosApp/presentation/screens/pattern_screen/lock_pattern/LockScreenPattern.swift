@@ -8,11 +8,10 @@
 
 import SwiftUI
 
-struct LockScreenAdapter: UIViewRepresentable {
+struct LockScreenPattern: UIViewRepresentable {
     typealias UIViewType = LockScreen
-    var frame: CGRect = CGRect(x: -100, y: -100, width: 300, height: 300)
+    var frame: CGRect = .init(x: -100, y: -100, width: 300, height: 300)
     let action: (Double, [Int]) -> Void
-    
     
     func makeUIView(context: Context) -> LockScreen {
         // Return LockScreen instance.
@@ -36,13 +35,12 @@ struct LockScreenAdapter: UIViewRepresentable {
     func updateUIView(_ uiView: LockScreen, context: Context) {
         // Updates the state of the specified view with new information from SwiftUI.
     }
-    
 }
 
 struct LockScreenAdapter_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            LockScreenAdapter(action: {_,_ in})
+            LockScreenPattern(action: { _, _ in })
                 .background(content: {
                     Rectangle()
                         .fill(.red)
@@ -51,6 +49,5 @@ struct LockScreenAdapter_Previews: PreviewProvider {
             Text("Hello")
             Spacer()
         }
-        
     }
 }

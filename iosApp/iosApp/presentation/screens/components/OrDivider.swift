@@ -12,20 +12,22 @@ struct OrDivider: View {
     var body: some View {
         HStack(alignment: .center) {
             Rectangle()
-                .frame(width: .infinity, height: 5)
+                .frame(height: Dimen.orDividerHeight)
                 .foregroundColor(Color.secondaryContainerColor)
-                .cornerRadius(50, corners: [.topLeft, .bottomLeft])
-                .offset(.init(width: 0, height: 2))
-            
-            Text("or")
+                .cornerRadius(Dimen.orDividerRadius, corners: [.topLeft, .bottomLeft])
+                .offset(.init(width: 0, height: Dimen.orDividerOffset))
+
+            Text(
+                NSLocalizedString("or", comment: "")
+            )
                 .titleMediumStyle()
                 .foregroundColor(Color.onBackgroundColor.opacity(0.8))
-            
+
             Rectangle()
-                .frame(width: .infinity, height: 5)
+                .frame(height: Dimen.orDividerHeight)
                 .foregroundColor(Color.secondaryContainerColor)
-                .cornerRadius(50, corners: [.topRight, .bottomRight])
-                .offset(.init(width: 0, height: 2))
+                .cornerRadius(Dimen.orDividerRadius, corners: [.topRight, .bottomRight])
+                .offset(.init(width: 0, height: Dimen.orDividerOffset))
         }
     }
 }
@@ -37,7 +39,6 @@ struct OrDivider_Previews: PreviewProvider {
 }
 
 struct RoundedCorner: Shape {
-
     var radius: CGFloat = .infinity
     var corners: UIRectCorner = .allCorners
 
@@ -49,6 +50,6 @@ struct RoundedCorner: Shape {
 
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
-        clipShape( RoundedCorner(radius: radius, corners: corners) )
+        clipShape(RoundedCorner(radius: radius, corners: corners))
     }
 }

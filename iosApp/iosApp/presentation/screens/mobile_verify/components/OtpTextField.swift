@@ -19,7 +19,7 @@ struct OtpTextField: View {
             }
         }
         .background {
-            TextField("", text: $otpText.limit(length: 6))
+            TextField("", text: $otpText.limit(length: 4))
                 .keyboardType(.numberPad)
                 .textContentType(.oneTimeCode)
                 .frame(width: 1, height: 1)
