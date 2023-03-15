@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LoginBodyText: View {
+struct AuthBodyText: View {
     let text: String
     var body: some View {
         Text(text)
@@ -20,6 +20,6 @@ struct LoginBodyText: View {
 
 struct LoginBodyText_Previews: PreviewProvider {
     static var previews: some View {
-        LoginBodyText(text: "We will provide you with 4 digit verification code")
+        AuthBodyText(text: "We will provide you with 4 digit verification code")
     }
 }

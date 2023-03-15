@@ -21,6 +21,10 @@ struct ButtonStylesGuide: View {
             .disabled(true)
             
             Button {} label: {
+                Text("small primary")
+                    .startButtonStyle()
+            }
+            Button {} label: {
                 ZStack {
                     HStack {
                         Image("apple_icon")
@@ -58,6 +62,29 @@ struct PrimaryButtonStyle: ViewModifier {
     }
 }
 
+struct StartButtonStyle: ViewModifier {
+    @Environment(\.isEnabled) var isEnabled
+    
+    var backgroundColor: Color {
+        isEnabled ? Color.tertiaryColor : Color.primaryColor.opacity(0.6)
+    }
+    
+    var contentColor: Color {
+        isEnabled ? Color.onPrimaryColor : Color.onPrimaryColor.opacity(0.6)
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .frame(maxWidth: .infinity)
+            .frame(height:56)
+            .bodyLargeStyle()
+            .foregroundColor(contentColor)
+            .background(
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .fill(backgroundColor)
+            )
+    }
+}
 struct SocialMediaButtonStyle: ViewModifier {
     @Environment(\.isEnabled) var isEnabled
     var radius: CGFloat = 50
@@ -87,6 +114,9 @@ struct SocialMediaButtonStyle: ViewModifier {
 extension View {
     public func primaryButtonStyle() -> some View {
         modifier(PrimaryButtonStyle())
+    }
+    public func startButtonStyle() -> some View {
+        modifier(StartButtonStyle())
     }
     public func socialMediaButtonStyle(radius: CGFloat = 50) -> some View {
         modifier(SocialMediaButtonStyle(radius: radius))

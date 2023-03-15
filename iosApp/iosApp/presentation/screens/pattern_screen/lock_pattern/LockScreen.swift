@@ -121,6 +121,7 @@ public class LockScreen: UIView {
         if gesture is UIPanGestureRecognizer {
             if gesture.state == .began {
                 resetScreen()
+                endPattern()
             } else if gesture.state == .ended {
                 if finalLines.count > 0 {
                     let l = finalLines
@@ -160,17 +161,38 @@ public class LockScreen: UIView {
     func index(_ point: CGPoint) -> Int {
         let beginPoint = cell(at: currentCellIndex)?.center
         var middlePoint = CGPoint()
+        
         if beginPoint != nil {
             middlePoint.x = (beginPoint!.x + point.x) / 2
             middlePoint.y = (beginPoint!.y + point.y) / 2
         }
         for view in subviews {
-            if let circle = view as? Circle, circle.frame.contains(point) || circle.frame.contains(middlePoint)  {
-                if circle.isSelected == false {
+            if let circle = view as? Circle, circle.frame.contains(point) {
+                
+                if !circle.isSelected {
                     circle.isSelected = true
                     currentCellIndex = index(of: circle)
                     selectedCircle = circle
-                } else if circle.isSelected == true && allowClosedPattern == true {
+                } else if circle.isSelected && allowClosedPattern{
+                    currentCellIndex = index(of: circle)
+                    selectedCircle = circle
+                }
+                
+                let row = circle.tag/kTagId - kSeed
+                let col = circle.tag % kTagId - kSeed
+                let cellIndex = row*size + col
+                return cellsInOrder.contains(cellIndex) ? -1 : cellIndex
+            }
+        }
+        
+        for view in subviews {
+            if let circle = view as? Circle, circle.frame.contains(middlePoint)  {
+                
+                if !circle.isSelected {
+                    circle.isSelected = true
+                    currentCellIndex = index(of: circle)
+                    selectedCircle = circle
+                } else if circle.isSelected && allowClosedPattern{
                     currentCellIndex = index(of: circle)
                     selectedCircle = circle
                 }

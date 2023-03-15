@@ -45,7 +45,10 @@ struct PhoneTextField: View {
             .foregroundColor(Color.onBackgroundColor)
             .frame(width: 80)
             Divider().padding(.vertical, 8)
-            TextField("Phone Number", text: $text)
+            TextField(
+                NSLocalizedString("Phone Number", comment: ""),
+                text: $text
+            )
                 .keyboardType(.numberPad)
                 .focused($isKeyboardShowing)
                 .onReceive(
@@ -70,7 +73,9 @@ struct PhoneTextField: View {
         }
         .toolbar {
             ToolbarItem(placement: .keyboard) {
-                Button("Done") {
+                Button(
+                    NSLocalizedString("Done", comment: "")
+                ) {
                     isKeyboardShowing.toggle()
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
