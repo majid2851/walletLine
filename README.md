@@ -1,5 +1,6 @@
 # walletLine
-this is a sample walletLine project .I used Kotlin-multi-platform , koin, sqlDelight and Jetpack compose ,SwiftUi
+This is a sample walletLine project.
+I used Kotlin-multi-platform , koin, sqlDelight and Jetpack compose ,SwiftUi
 
 ![Screenshot_1681730524](https://user-images.githubusercontent.com/46685643/232484017-f28b2568-824e-4ccf-8c55-58236026dcb2.png)
 
